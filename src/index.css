@@ -8,7 +8,7 @@ html,
 body,
 #root,
 .app {
-  height: 150%;
+  height: 100%;
   background-color: #010026;
   @apply text-white;
 }
