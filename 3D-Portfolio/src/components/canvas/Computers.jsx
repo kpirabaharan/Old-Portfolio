@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
@@ -30,7 +30,7 @@ const Computers = ({ isSmall, isMedium }) => {
             ? [0, -2.3, -1]
             : [0, -2.5, -1.25]
         }
-        rotation={[-0.0, -0.25, -0.05]}
+        rotation={[-0.0, -0.23, -0.05]}
       />
     </mesh>
   );

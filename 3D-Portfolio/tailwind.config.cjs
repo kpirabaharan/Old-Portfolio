@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#050816',
+        primary: '#080609',
         secondary: '#aaa6c3',
         tertiary: '#151030',
         'black-100': '#100d25',
@@ -16,8 +16,8 @@ module.exports = {
         card: '0px 35px 120px -15px #211e35',
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/herobg.png')",
-        'hero-pattern2': "url('/src/assets/herobg2.jpg')",
+        wallpaper: "url('/src/assets/bg-wallpaper.jpg')",
+        'wallpaper-2': "url('/src/assets/bg-wallpaper-2.jpg')",
         'gradient-bluewhite': 'linear-gradient(135deg, #E3F0FF, #FAFCFF)',
       },
       fontFamily: {

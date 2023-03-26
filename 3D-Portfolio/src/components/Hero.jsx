@@ -5,7 +5,7 @@ import { ComputersCanvas } from './canvas/';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
+    <section className='relative w-full h-full mx-auto'>
       <div
         className={`${styles.paddingX} absolute inset-0 top-10 max-w-7xl 
           mx-auto flex flex-row items-start gap-5`}
@@ -26,8 +26,8 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
       <div
-        className='absolute bottom-32 xs:bottom-20 w-full flex justify-center 
-          items-center'
+        className='absolute bottom-12 w-full flex justify-center 
+          items-center cursor-pointer z-10'
       >
         <a href='#about'>
           <div
