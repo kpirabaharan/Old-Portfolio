@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fiex top-0 z-20
-        bg-primary`}
+        bg-[#130c18]`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -23,8 +23,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='29 h-9 object-contain' />
-          <p className='text-white text-lg font-semibold cursor-pointer'>
-            Keeshigan <span className='hidden md:inline'> Pirabaharan</span>
+          <p className='text-white text-lg leading-[20px] font-semibold cursor-pointer'>
+            Keeshigan <span className='block md:inline'> Pirabaharan</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>

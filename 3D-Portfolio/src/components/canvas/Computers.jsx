@@ -2,9 +2,10 @@ import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
+import useMediaQuery from '../../hooks/useMediaQuery';
 import CanvasLoader from '../Loader';
 
-const Computers = () => {
+const Computers = ({ isSmall, isMedium }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
@@ -21,8 +22,14 @@ const Computers = () => {
       <hemisphereLight intensity={0.15} groundColor='black' />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.2, -1.3]}
+        scale={isSmall ? 0.55 : isMedium ? 0.65 : 0.75}
+        position={
+          isSmall
+            ? [0, -1.8, -0.95]
+            : isMedium
+            ? [0, -2.3, -1]
+            : [0, -2.5, -1.25]
+        }
         rotation={[-0.0, -0.25, -0.05]}
       />
     </mesh>
@@ -30,6 +37,9 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
+  const isSmallScreens = useMediaQuery('(max-width: 768px)');
+  const isMediumScreens = useMediaQuery('(max-width: 1060px)');
+
   return (
     <Canvas
       frameloop='demand'
@@ -43,7 +53,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers isSmall={isSmallScreens} isMedium={isMediumScreens} />
       </Suspense>
       <Preload all />
     </Canvas>
