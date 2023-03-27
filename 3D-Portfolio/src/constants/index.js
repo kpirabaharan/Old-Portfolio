@@ -13,12 +13,10 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  python,
+  mySQL,
+  opg,
+  cw,
   carrent,
   jobit,
   tripguide,
@@ -41,7 +39,7 @@ export const navLinks = [
 ];
 
 const about = `I'm a Mechatronics/Software engineer with experience in Javascript,
- Dart, C and Python, and expertise in Frameworks like React, Node.js and Three.js. 
+ Dart, C and Python, and expertise in Frameworks like React, Node and Express. 
  I'm a quick learner with the willingness to learn new technologies to create 
  efficient and scalable solutions that solve real-world problems.`;
 
@@ -102,6 +100,10 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: 'MySQL',
+    icon: mySQL,
+  },
+  {
     name: 'Three JS',
     icon: threejs,
   },
@@ -110,67 +112,34 @@ const technologies = [
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
+    name: 'Python',
+    icon: python,
   },
 ];
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'Embedded Software Developer',
+    company_name: 'Curtiss-Wright',
+    location: 'Ottawa, ON',
+    icon: cw,
+    iconBg: '#e51938',
+    date: 'June 2022 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Developed Automated Test Software for DBH-670 (SBC + Switch)',
+      'Lorem Ipsum',
+      'Lorem Ipsum',
+      'Lorem Ipsum',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
+    title: 'Modifcations Team Lead (Internship)',
+    company_name: 'Ontario Power Generation',
+    location: 'Pickering, ON',
+    icon: opg,
+    iconBg: '#FFFFFF',
+    date: 'July 2020 - July 2021',
+    points: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum'],
   },
 ];
 
