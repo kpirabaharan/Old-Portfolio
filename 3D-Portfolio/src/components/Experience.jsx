@@ -50,7 +50,7 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
-      <motion.div cariant={textVariant()}>
+      <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
       <div className='mt-20 flex flex-col'>

@@ -14,7 +14,14 @@ import {
   mongodb,
   git,
   python,
+  raspberryPi,
+  dart,
+  arduino,
+  flutter,
+  tensorflow,
+  c,
   mySQL,
+  linux,
   opg,
   cw,
   carrent,
@@ -62,7 +69,7 @@ const services = [
   },
 ];
 
-const technologies = [
+const frontEndDev = [
   {
     name: 'HTML 5',
     icon: html,
@@ -88,8 +95,19 @@ const technologies = [
     icon: redux,
   },
   {
+    name: 'Three JS',
+    icon: threejs,
+  },
+  {
     name: 'Tailwind CSS',
     icon: tailwind,
+  },
+];
+
+const backEndDev = [
+  {
+    name: 'JavaScript',
+    icon: javascript,
   },
   {
     name: 'Node JS',
@@ -103,17 +121,53 @@ const technologies = [
     name: 'MySQL',
     icon: mySQL,
   },
+];
+
+const mobileDev = [
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'Dart',
+    icon: dart,
   },
   {
-    name: 'git',
-    icon: git,
+    name: 'Flutter',
+    icon: flutter,
   },
+];
+
+const embeddedDev = [
+  {
+    name: 'C',
+    icon: c,
+  },
+  {
+    name: 'Linux',
+    icon: linux,
+  },
+  {
+    name: 'Arduino',
+    icon: arduino,
+  },
+  {
+    name: 'Raspberry Pi',
+    icon: raspberryPi,
+  },
+];
+
+const dataScience = [
   {
     name: 'Python',
     icon: python,
+  },
+  {
+    name: 'Tensorflow',
+    icon: tensorflow,
+  },
+];
+
+const otherTech = [
+  {
+    name: 'git',
+    icon: git,
   },
 ];
 
@@ -236,4 +290,16 @@ const projects = [
   },
 ];
 
-export { about, services, technologies, experiences, testimonials, projects };
+export {
+  about,
+  services,
+  frontEndDev,
+  backEndDev,
+  mobileDev,
+  embeddedDev,
+  dataScience,
+  otherTech,
+  experiences,
+  testimonials,
+  projects,
+};
