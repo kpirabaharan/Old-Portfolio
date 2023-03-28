@@ -94,10 +94,10 @@ const frontEndDev = [
     name: 'Redux Toolkit',
     icon: redux,
   },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
+  // {
+  //   name: 'Three JS',
+  //   icon: threejs,
+  // },
   {
     name: 'Tailwind CSS',
     icon: tailwind,

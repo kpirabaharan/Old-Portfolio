@@ -12,19 +12,31 @@ import {
   dataScience,
   otherTech,
 } from '../constants';
+import { down, close } from '../assets';
 
 const TechField = ({ field, technology }) => {
   return (
     <div className='w-full h-full py-6'>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className='flex flex-row'>
         <p className={styles.sectionSubText}>{field}</p>
       </motion.div>
-      <div className='flex flex-row flex-wrap gap-10 h-full w-full'>
+      <div className='flex flex-row flex-wrap pt-6 gap-10 h-full w-full'>
         {technology.map((tech) => {
           return (
-            <div className='w-28 h-28' key={`${field}${tech.name}`}>
-              <BallCanvas icon={tech.icon} />
-              <div className='flex justify-center w-full'>
+            <div
+              className='w-[100px] h-[100px] flex flex-col justify-center 
+                items-center'
+              key={`${field}${tech.name}`}
+            >
+              {/* <BallCanvas icon={tech.icon} /> */}
+              <div className='w-full h-full flex justify-center'>
+                <img
+                  className='w-[90%] h-[90%] object-contain'
+                  src={tech.icon}
+                  alt={tech.name}
+                />
+              </div>
+              <div className=''>
                 <p className=''>{tech.name}</p>
               </div>
             </div>
