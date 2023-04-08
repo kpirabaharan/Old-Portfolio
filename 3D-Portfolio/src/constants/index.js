@@ -10,14 +10,18 @@ import {
   reactjs,
   redux,
   tailwind,
+  phone,
+  server,
+  embedded,
   nodejs,
   mongodb,
   git,
   python,
   raspberryPi,
   dart,
-  arduino,
   flutter,
+  kotlin,
+  arduino,
   tensorflow,
   c,
   mySQL,
@@ -56,16 +60,16 @@ const services = [
     icon: web,
   },
   {
-    title: 'Flutter Developer',
-    icon: mobile,
+    title: 'Mobile Developer',
+    icon: phone,
   },
   {
     title: 'Backend Developer',
-    icon: backend,
+    icon: server,
   },
   {
     title: 'Embedded Systems Developer',
-    icon: creator,
+    icon: embedded,
   },
 ];
 
@@ -131,6 +135,10 @@ const mobileDev = [
   {
     name: 'Flutter',
     icon: flutter,
+  },
+  {
+    name: 'Kotlin',
+    icon: kotlin,
   },
 ];
 

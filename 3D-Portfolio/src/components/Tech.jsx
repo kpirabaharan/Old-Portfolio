@@ -16,7 +16,7 @@ import { down, close } from '../assets';
 
 const TechField = ({ field, technology }) => {
   return (
-    <div className='w-full h-full py-6'>
+    <div className='w-full h-full pt-4 pb-2'>
       <motion.div variants={textVariant()} className='flex flex-row'>
         <p className={styles.sectionSubText}>{field}</p>
       </motion.div>
@@ -29,9 +29,9 @@ const TechField = ({ field, technology }) => {
               key={`${field}${tech.name}`}
             >
               {/* <BallCanvas icon={tech.icon} /> */}
-              <div className='w-full h-full flex justify-center'>
+              <div className='w-[90%] h-[90%] flex justify-center'>
                 <img
-                  className='w-[90%] h-[90%] object-contain'
+                  className='w-full h-full object-contain'
                   src={tech.icon}
                   alt={tech.name}
                 />
