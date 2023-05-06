@@ -192,10 +192,10 @@ const experiences = [
     iconBg: '#e51938',
     date: 'June 2022 - Present',
     points: [
-      'Developed Automated Test Software for DBH-670 (SBC + Switch)',
-      'Lorem Ipsum',
-      'Lorem Ipsum',
-      'Lorem Ipsum',
+      'Developed automated test software using C and Bash Scripts to perform qualification testing on a vehicle management computer / network switch hybrid device',
+      'Collaborated with hardware engineers to optimize system performance and reliability',
+      'Created and maintained software documentation, including design specifications, code documentation, and user manuals',
+      'Participated in code reviews and worked with other developers to ensure software quality and adherence to coding standards',
     ],
   },
   {
@@ -205,7 +205,13 @@ const experiences = [
     icon: opg,
     iconBg: '#FFFFFF',
     date: 'July 2020 - July 2021',
-    points: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum'],
+    points: [
+      'Managed small scale projects (< $200k) requiring engineering changes to the plant',
+      'Assisted senior project managers with capital project (>$200k), including coordination with internal stakeholder and EPC contractors to ensure project success',
+      'Exposure to industrial operations, complex system processes, and practical failure modes',
+      'Exposure to technical work done in both mechanical and electrical modifications',
+      'Worked with a multidisciplinary team of engineers and technicians to support modifications',
+    ],
   },
 ];
 
