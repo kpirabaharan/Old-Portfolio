@@ -28,8 +28,8 @@ import {
   linux,
   opg,
   cw,
-  carrent,
-  jobit,
+  ecommerce,
+  velocityvoyage,
   tripguide,
   threejs,
 } from '../assets';
@@ -215,38 +215,39 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-];
+// const testimonials = [
+//   {
+//     testimonial:
+//       'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+//     name: 'Sara Lee',
+//     designation: 'CFO',
+//     company: 'Acme Co',
+//     image: 'https://randomuser.me/api/portraits/women/4.jpg',
+//   },
+//   {
+//     testimonial:
+//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
+//     name: 'Chris Brown',
+//     designation: 'COO',
+//     company: 'DEF Corp',
+//     image: 'https://randomuser.me/api/portraits/men/5.jpg',
+//   },
+//   {
+//     testimonial:
+//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+//     name: 'Lisa Wang',
+//     designation: 'CTO',
+//     company: '456 Enterprises',
+//     image: 'https://randomuser.me/api/portraits/women/6.jpg',
+//   },
+// ];
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'E-Commerce Web and Mobile App',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Web/Mobile application will utilize Stripe API to provide a secure online \
+      shopping experience for users to purchase technology products with confidence.',
     tags: [
       {
         name: 'react',
@@ -260,51 +261,35 @@ const projects = [
         name: 'tailwind',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'nodejs',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'flutter',
+        color: 'blue-text-gradient',
+      },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: ecommerce,
+    source_code_link: 'https://github.com/kpirabaharan/E-Commerce',
   },
   {
-    name: 'Job IT',
+    name: 'Velocity Voyage',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'The endless runner video game, created with Unity, offers players an exciting \
+      and challenging experience as they run and dodge obstacles for as long as possible.',
     tags: [
       {
-        name: 'react',
+        name: 'unity',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'csharp',
         color: 'green-text-gradient',
       },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: velocityvoyage,
+    source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
   },
 ];
 
@@ -318,6 +303,5 @@ export {
   dataScience,
   otherTech,
   experiences,
-  testimonials,
   projects,
 };

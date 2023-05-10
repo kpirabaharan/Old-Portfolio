@@ -39,9 +39,9 @@ import mySQL from './tech/MySQL.png';
 
 import opg from './company/opg.png';
 import cw from './company/cw.png';
-import carrent from './carrent.png';
-import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import ecommerce from './ecommerce.png';
+import velocityvoyage from './velocityvoyage.png';
 
 export {
   logo,
@@ -80,7 +80,7 @@ export {
   c,
   opg,
   cw,
-  carrent,
-  jobit,
+  ecommerce,
+  velocityvoyage,
   tripguide,
 };
