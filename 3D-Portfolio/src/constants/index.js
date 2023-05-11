@@ -30,7 +30,7 @@ import {
   cw,
   ecommerce,
   velocityvoyage,
-  tripguide,
+  sociopedia,
   threejs,
 } from '../assets';
 
@@ -244,9 +244,27 @@ const experiences = [
 
 const projects = [
   {
-    name: 'E-Commerce Web and Mobile App',
+    name: 'Velocity Voyage',
     description:
-      'Web/Mobile application will utilize Stripe API to provide a secure online \
+      'The endless runner video game, created with Unity, offers players an exciting \
+      and challenging experience as they run and dodge obstacles for as long as possible.',
+    tags: [
+      {
+        name: 'unity',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'csharp',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: velocityvoyage,
+    source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
+  },
+  {
+    name: 'E-Commerce',
+    description:
+      'This Web/Mobile application utilizes Stripe API to provide a secure online \
       shopping experience for users to purchase technology products with confidence.',
     tags: [
       {
@@ -274,22 +292,34 @@ const projects = [
     source_code_link: 'https://github.com/kpirabaharan/E-Commerce',
   },
   {
-    name: 'Velocity Voyage',
+    name: 'Sociopedia',
     description:
-      'The endless runner video game, created with Unity, offers players an exciting \
-      and challenging experience as they run and dodge obstacles for as long as possible.',
+      'The full-stack social media app provides users with a comprehensive platform \
+      to connect, communicate, and share content with others in a seamless and engaging manner.',
     tags: [
       {
-        name: 'unity',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'csharp',
+        name: 'mongodb',
         color: 'green-text-gradient',
       },
+      {
+        name: 'material-ui',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'nodejs',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'flutter',
+        color: 'blue-text-gradient',
+      },
     ],
-    image: velocityvoyage,
-    source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
+    image: sociopedia,
+    source_code_link: 'https://github.com/kpirabaharan/Social-Media-App',
   },
 ];
 

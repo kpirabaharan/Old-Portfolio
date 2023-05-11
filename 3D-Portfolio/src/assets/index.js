@@ -39,7 +39,7 @@ import mySQL from './tech/MySQL.png';
 
 import opg from './company/opg.png';
 import cw from './company/cw.png';
-import tripguide from './tripguide.png';
+import sociopedia from './sociopedia.png';
 import ecommerce from './ecommerce.png';
 import velocityvoyage from './velocityvoyage.png';
 
@@ -82,5 +82,5 @@ export {
   cw,
   ecommerce,
   velocityvoyage,
-  tripguide,
+  sociopedia,
 };
