@@ -7,12 +7,14 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn, fadeIn } from '../utils';
 
-const InfoCard = ({ index, name, value }) => {
+const InfoCard = ({ index, name, value, href }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <div className='flex flex-row md:flex-col items-baseline'>
         <p className='font-bold text-2xl w-[150px]'>{name}</p>
-        <p className='pl-8 md:pl-0 md:pt-4 font-normal text-xl'>{value}</p>
+        <a className='pl-8 md:pl-0 md:pt-4 font-normal text-xl' href={href}>
+          {value}
+        </a>
       </div>
     </motion.div>
   );
