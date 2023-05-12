@@ -22,10 +22,10 @@ const Computers = ({ isSmall, isMedium }) => {
       <hemisphereLight intensity={0.15} groundColor='black' />
       <primitive
         object={computer.scene}
-        scale={isSmall ? 0.55 : isMedium ? 0.65 : 0.75}
+        scale={isSmall ? 0.4 : isMedium ? 0.65 : 0.75}
         position={
           isSmall
-            ? [0, -1.8, -0.95]
+            ? [0, -1.8, -0.75]
             : isMedium
             ? [0, -2.3, -1]
             : [0, -2.5, -1.25]

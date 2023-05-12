@@ -10,9 +10,9 @@ import { slideIn, fadeIn } from '../utils';
 const InfoCard = ({ index, name, value, href }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', 1 + index * 0.5, 1, 0.75)}>
-      <div className='flex flex-row md:flex-col items-baseline'>
+      <div className='flex flex-col items-baselines'>
         <p className='font-bold text-2xl w-[150px]'>{name}</p>
-        <a className='pl-8 md:pl-0 md:pt-4 font-normal text-xl' href={href}>
+        <a className='md:pt-4 font-normal text-l md:text-xl' href={href}>
           {value}
         </a>
       </div>
@@ -28,8 +28,10 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Don't Be A Stranger</p>
-        <h3 className={styles.sectionHeadText}>Contact Me At ...</h3>
-        <div className='mt-16 md:mt-8 flex flex-col md:flex-row justify-around gap-7'>
+        <h3 className={styles.sectionHeadText}>
+          Contact Me At <span className='hidden sm:inline'>...</span>
+        </h3>
+        <div className='mt-2 md:mt-8 flex flex-col md:flex-row justify-around gap-7'>
           {contactInfo.map((info, ind) => (
             <InfoCard key={`project-${ind}`} index={ind} {...info} />
           ))}
