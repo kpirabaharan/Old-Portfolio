@@ -8,6 +8,11 @@ import { github } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils';
 
+const projectVariant = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
+
 const ProjectCard = ({
   index,
   name,
@@ -21,15 +26,31 @@ const ProjectCard = ({
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         tiltReverse={true}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary rounded-2xl sm:w-[360px] w-full h-[350px]'
       >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt={name}
-            className='w-full h-full object-cover rounded-3xl'
-          />
-          <div className='absolute inset-0 flex justify-end m-3'>
+        <div className='absolute inset-0 flex justify-end m-6'>
+          <div
+            onClick={() => {
+              window.open(source_code_link, '_blank');
+            }}
+            className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                items-center cursor-pointer'
+          >
+            <img
+              src={github}
+              alt='github'
+              className='w-1/2 h-1/2 object-contain'
+            />
+          </div>
+        </div>
+        <div
+          className='absolute h-full w-full rounded-2xl opacity-0 hover:opacity-90
+          transition duration-500 flex flex-col justify-center items-center text-center
+          bg-slate-700'
+        >
+          <p className='text-2xl text-white'>{name}</p>
+          <p className='mt-7 px-8'>{description}</p>
+          <div className='absolute inset-0 flex justify-end m-6'>
             <div
               onClick={() => {
                 window.open(source_code_link, '_blank');
@@ -45,17 +66,11 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-sm'>{description}</p>
-        </div>
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-sm ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
+        <img
+          className='h-full w-screen object-cover rounded-[2rem] p-5'
+          src={image}
+          alt={name}
+        />
       </Tilt>
     </motion.div>
   );

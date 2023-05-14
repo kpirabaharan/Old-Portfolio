@@ -21,7 +21,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#3d38c9]'>Keeshigan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a <TypedContent text={typedLanding} />
+            <TypedContent text={typedLanding} />
           </p>
         </div>
       </div>

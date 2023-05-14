@@ -1,7 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -31,7 +28,6 @@ import {
   ecommerce,
   velocityvoyage,
   sociopedia,
-  threejs,
 } from '../assets';
 
 export const navLinks = [
@@ -59,13 +55,13 @@ const about = `I'm a Mechatronics/Software engineer with experience in Javascrip
  efficient and scalable solutions that solve real-world problems.`;
 
 const typedLanding = [
-  'Full Stack Developer',
+  'I am a Full Stack Developer',
   1000,
-  'Mobile App Developer',
+  'I am a Mobile App Developer',
   1000,
-  'Embedded Systems Engineer',
+  'I am a Embedded Systems Engineer',
   1000,
-  'Mechatronics/Software Engineer',
+  'I am a Mechatronics/Software Engineer',
 ];
 
 const services = [
@@ -112,10 +108,6 @@ const frontEndDev = [
     name: 'Redux Toolkit',
     icon: redux,
   },
-  // {
-  //   name: 'Three JS',
-  //   icon: threejs,
-  // },
   {
     name: 'Tailwind CSS',
     icon: tailwind,
