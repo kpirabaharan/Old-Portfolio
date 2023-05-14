@@ -44,6 +44,12 @@ import sociopedia from './sociopedia.png';
 import ecommerce from './ecommerce.png';
 import velocityvoyage from './velocityvoyage.png';
 
+import mail from './mail.svg';
+import location from './location.svg';
+import linkedin from './linkedin.svg';
+import githubsvg from './github.svg';
+import docicon from './document.svg';
+
 export {
   logo,
   web,
@@ -79,4 +85,9 @@ export {
   sociopedia,
   ecommerce,
   velocityvoyage,
+  mail,
+  location,
+  linkedin,
+  githubsvg,
+  docicon,
 };

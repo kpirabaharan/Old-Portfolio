@@ -28,6 +28,11 @@ import {
   ecommerce,
   velocityvoyage,
   sociopedia,
+  location,
+  mail,
+  linkedin,
+  githubsvg,
+  docicon,
 } from '../assets';
 
 export const navLinks = [
@@ -301,26 +306,44 @@ const projects = [
 const contactInfo = [
   {
     name: 'Email',
+    image: mail,
     value: 'kpirabaharan3@gmail.com',
     href: 'mailto:kpirabaharan3@gmail.com',
     link: true,
   },
   {
     name: 'Phone',
+    image: phone,
     value: '+1 416 617 3498',
     href: 'tel:4166173498',
     link: true,
   },
   {
-    name: 'Location',
-    value: 'Toronto, ON',
-    link: false,
+    name: 'LinkedIn',
+    image: linkedin,
+    value: 'kpirabaharan',
+    href: 'https://www.linkedin.com/in/kpirabaharan/',
+    link: true,
+  },
+  {
+    name: 'Github',
+    image: githubsvg,
+    value: 'kpirabaharan',
+    href: 'https://github.com/kpirabaharan',
+    link: true,
   },
   {
     name: 'Resume',
-    value: 'Download',
+    image: docicon,
+    value: 'Resume',
     href: './resume.pdf',
     link: true,
+  },
+  {
+    name: 'Location',
+    image: location,
+    value: 'Toronto, ON',
+    link: false,
   },
 ];
 
