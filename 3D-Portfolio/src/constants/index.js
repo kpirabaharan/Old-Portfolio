@@ -301,15 +301,24 @@ const contactInfo = [
     name: 'Email',
     value: 'kpirabaharan3@gmail.com',
     href: 'mailto:kpirabaharan3@gmail.com',
+    link: true,
   },
   {
     name: 'Phone',
     value: '+1 416 617 3498',
     href: 'tel:4166173498',
+    link: true,
   },
   {
     name: 'Location',
     value: 'Toronto, ON',
+    link: false,
+  },
+  {
+    name: 'Resume',
+    value: 'Download',
+    href: './resume.pdf',
+    link: true,
   },
 ];
 

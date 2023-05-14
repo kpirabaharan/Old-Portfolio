@@ -7,12 +7,19 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn, fadeIn } from '../utils';
 
-const InfoCard = ({ index, name, value, href }) => {
+const InfoCard = ({ index, name, value, href, link }) => {
+  const isDownload = name === 'Resume' ? true : false;
+  const isLink = link ? 'underline underline-offset-4' : '';
+
   return (
     <motion.div variants={fadeIn('up', 'spring', 1 + index * 0.5, 1, 0.75)}>
       <div className='flex flex-col items-baselines'>
         <p className='font-bold text-2xl w-[150px]'>{name}</p>
-        <a className='md:pt-4 font-normal text-l md:text-xl' href={href}>
+        <a
+          className={`md:pt-4 font-normal text-l md:text-xl ${isLink}`}
+          href={href}
+          download={isDownload}
+        >
           {value}
         </a>
       </div>
@@ -27,11 +34,10 @@ const Contact = () => {
         variants={slideIn('up', 'tween', 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Don't Be A Stranger</p>
         <h3 className={styles.sectionHeadText}>
           Contact Me At <span className='hidden sm:inline'>...</span>
         </h3>
-        <div className='mt-2 md:mt-8 flex flex-col md:flex-row justify-around gap-7'>
+        <div className='mt-2 md:mt-8 flex flex-col md:flex-row md:flex-wrap justify-between gap-7'>
           {contactInfo.map((info, ind) => (
             <InfoCard key={`project-${ind}`} index={ind} {...info} />
           ))}

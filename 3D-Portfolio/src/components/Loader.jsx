@@ -7,11 +7,8 @@ const Loader = () => {
 
   return (
     <Html>
-      <span className='canvas-load'></span>
-      <div className='flex flex-row gap-4'>
-        <p className='text-white text-center'>
-          Loading... <span>{progress.toFixed(0)}%</span>
-        </p>
+      <div className='relative right-6 flex flex-row'>
+        <p className=' text-white text-center'>{progress.toFixed(0)}%</p>
         <LoadingSpinner />
       </div>
     </Html>
