@@ -58,6 +58,16 @@ const about = `I'm a Mechatronics/Software engineer with experience in Javascrip
  I'm a quick learner with the willingness to learn new technologies to create 
  efficient and scalable solutions that solve real-world problems.`;
 
+const typedLanding = [
+  'Full Stack Developer',
+  1000,
+  'Mobile App Developer',
+  1000,
+  'Embedded Systems Engineer',
+  1000,
+  'Mechatronics/Software Engineer',
+];
+
 const services = [
   {
     title: 'Web Developer',
@@ -324,6 +334,7 @@ const contactInfo = [
 
 export {
   about,
+  typedLanding,
   services,
   frontEndDev,
   backEndDev,

@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
+import { typedLanding } from '../constants';
 import { ComputersCanvas } from './canvas/';
+import TypedContent from './TypeAnimation';
 
 const Hero = () => {
   return (
@@ -19,8 +21,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#3d38c9]'>Keeshigan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Mechatronics Engineer <br className='sm:block hidden' /> and
-            Software Developer
+            I am a <TypedContent text={typedLanding} />
           </p>
         </div>
       </div>
