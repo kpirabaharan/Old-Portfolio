@@ -5,7 +5,7 @@ import { typedLanding } from '../constants';
 import { ComputersCanvas } from './canvas/';
 import TypedContent from './TypeAnimation';
 
-const Hero = () => {
+const Hero = ({ setIsCompleted }) => {
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div
@@ -21,7 +21,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#3d38c9]'>Keeshigan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <TypedContent text={typedLanding} />
+            <TypedContent text={typedLanding} setIsCompleted={setIsCompleted} />
           </p>
           <div className='flex-grow'></div>
           <div className='h-[60%] mb-10'>

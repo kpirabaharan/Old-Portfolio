@@ -1,6 +1,7 @@
 import { BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
-import Hero from './Hero';
+import Landing from './Landing';
 import Navbar from './Navbar';
+import Hero from './Hero';
 import About from './About';
 import Tech from './Tech';
 import Experience from './Experience';
@@ -10,8 +11,9 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 
 export {
-  Hero,
+  Landing,
   Navbar,
+  Hero,
   About,
   Tech,
   Experience,
