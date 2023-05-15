@@ -6,7 +6,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isSmall, isMedium }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computerdesk = useGLTF('./low_poly_gaming_desk/scene.gltf');
 
   return (
     <mesh>
@@ -14,23 +14,26 @@ const Computers = ({ isSmall, isMedium }) => {
         position={[-10, 50, 0]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={0.5}
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={0.5} />
+      <pointLight
+        position={isSmall ? [2, 0, 0.0] : [0, 0, 0.0]}
+        intensity={1.5}
+      />
       <hemisphereLight intensity={0.15} groundColor='black' />
       <primitive
-        object={computer.scene}
-        scale={isSmall ? 0.4 : isMedium ? 0.65 : 0.75}
+        object={computerdesk.scene}
+        scale={isSmall ? 4 : isMedium ? 8 : 8}
         position={
           isSmall
-            ? [0, -1.8, -0.75]
+            ? [3, -1.5, -0.5]
             : isMedium
-            ? [0, -2.3, -1]
-            : [0, -2.5, -1.25]
+            ? [3, -3.5, -1.5]
+            : [3, -3.5, -1.5]
         }
-        rotation={[-0.0, -0.23, -0.05]}
+        rotation={isSmall ? [0, 1.34, 0] : [0, 1.36, 0.0]}
       />
     </mesh>
   );

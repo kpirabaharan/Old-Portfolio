@@ -16,16 +16,19 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#3d38c9]' />
           <div className='w-1 sm:h-80 h-40 blue-gradient' />
         </div>
-        <div>
+        <div className='flex flex-col justify-start w-full h-full'>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#3d38c9]'>Keeshigan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             <TypedContent text={typedLanding} />
           </p>
+          <div className='flex-grow'></div>
+          <div className='h-[60%] mb-10'>
+            <ComputersCanvas />
+          </div>
         </div>
       </div>
-      <ComputersCanvas />
       <div
         className='absolute bottom-8 sm:-bottom-6 w-full flex justify-center 
           items-center cursor-pointer z-10'
