@@ -6,6 +6,7 @@ const TypedContent = ({ text, setIsCompleted }) => {
       sequence={[
         ...text,
         () => {
+          window.sessionStorage.setItem('isDoneLoading', 'true');
           return setIsCompleted(true);
         },
       ]}

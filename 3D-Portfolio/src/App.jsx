@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import {
@@ -16,6 +16,12 @@ import {
 
 const App = () => {
   const [isDoneLoading, setIsDoneLoading] = useState(false);
+
+  useEffect(() => {
+    setIsDoneLoading(
+      JSON.parse(window.sessionStorage.getItem('isDoneLoading') === 'true'),
+    );
+  }, []);
 
   return (
     <BrowserRouter>
