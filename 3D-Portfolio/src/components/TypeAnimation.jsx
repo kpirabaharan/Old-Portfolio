@@ -6,7 +6,7 @@ const TypedContent = ({ text }) => {
       sequence={[...text]}
       wrapper='span'
       cursor={true}
-      repeat={0}
+      repeat={Infinity}
     />
   );
 };

@@ -68,6 +68,7 @@ const typedLanding = [
   'I am a Embedded Systems Engineer',
   1000,
   'I am a Mechatronics/Software Engineer',
+  5000,
 ];
 
 const services = [
