@@ -90,7 +90,7 @@ const Projects = () => {
         >
           The following projects showcases my skills and expertise in various
           areas of software development, including web applications, mobile
-          apps, and machine learning. Each project reflects my commitment to
+          apps, and game development. Each project reflects my commitment to
           using the latest technologies and best practices to create reliable,
           scalable, and user-friendly software solutions.
         </motion.p>

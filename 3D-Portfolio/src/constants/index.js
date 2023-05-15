@@ -25,6 +25,7 @@ import {
   linux,
   opg,
   cw,
+  western,
   ecommerce,
   velocityvoyage,
   sociopedia,
@@ -185,7 +186,7 @@ const dataScience = [
 
 const otherTech = [
   {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
 ];
@@ -221,6 +222,14 @@ const experiences = [
     ],
   },
 ];
+
+const education = {
+  university: 'Western University',
+  location: 'London, ON',
+  icon: western,
+  degree: 'B.E.Sc Mechatronics Engineering',
+  date: '2017 - 2022',
+};
 
 const projects = [
   {
@@ -358,6 +367,7 @@ export {
   dataScience,
   otherTech,
   experiences,
+  education,
   projects,
   contactInfo,
 };

@@ -10,8 +10,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} fixed w-full flex items-center py-5 fiex top-0 z-20
-        bg-primary`}
+      className='sm:px-8 px-6 fixed w-full flex items-center py-5 top-0 z-20
+        bg-primary'
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -22,12 +22,12 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='29 h-9 object-contain pr-2' />
+          <img src={logo} alt='logo' className='h-9 object-contain pr-2' />
           <p className='text-white text-lg leading-[20px] font-semibold cursor-pointer'>
             Keeshigan <span className='block md:inline'> Pirabaharan</span>
           </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-8'>
+        <ul className='list-none hidden sm:flex flex-row items-center gap-4 md:gap-8'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -40,6 +40,14 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li
+            className={`outline outline-offset-0 outline-2 rounded-lg text-secondary 
+            hover:text-white p-2 text-lg font-medium cursor-pointer`}
+          >
+            <a href='./resume.pdf' download target='_blank'>
+              Resume
+            </a>
+          </li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

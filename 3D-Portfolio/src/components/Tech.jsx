@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { textVariant } from '../utils';
+import { fadeIn, textVariant } from '../utils';
 import { BallCanvas } from './canvas/';
 import {
   frontEndDev,
@@ -12,19 +12,22 @@ import {
   dataScience,
   otherTech,
 } from '../constants';
-import { down, close } from '../assets';
 
-const TechField = ({ field, technology }) => {
+const TechField = ({ index, field, technology }) => {
   return (
-    <div className='w-full h-full pt-4 pb-2'>
-      <motion.div variants={textVariant()} className='flex flex-row'>
+    <div className='w-full h-full pt-8 pb-2'>
+      <motion.div
+        variants={fadeIn('right', 'spring', 0.5 + index * 0.5, 1)}
+        className='flex flex-row'
+      >
         <p className={styles.sectionSubText}>{field}</p>
       </motion.div>
       <div className='flex flex-row flex-wrap pt-6 gap-10 h-full w-full'>
         {technology.map((tech) => {
           return (
-            <div
-              className='w-[100px] h-[100px] flex flex-col justify-center 
+            <motion.div
+              variants={fadeIn('right', 'spring', 0.5 + index * 0.5, 1)}
+              className='w-[100px] h-[50px] sm:w-[75px] sm:h-[75px] flex flex-col justify-center 
                 items-center'
               key={`${field}${tech.name}`}
             >
@@ -36,10 +39,8 @@ const TechField = ({ field, technology }) => {
                   alt={tech.name}
                 />
               </div>
-              <div className=''>
-                <p className=''>{tech.name}</p>
-              </div>
-            </div>
+              <p className='pt-2 text-center'>{tech.name}</p>
+            </motion.div>
           );
         })}
       </div>
@@ -53,15 +54,28 @@ const Tech = () => {
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
-      <TechField field={'Frontend Development'} technology={frontEndDev} />
-      <TechField field={'Backend Development'} technology={backEndDev} />
-      <TechField field={'Mobile Development'} technology={mobileDev} />
       <TechField
+        index={0}
+        field={'Frontend Development'}
+        technology={frontEndDev}
+      />
+      <TechField
+        index={1}
+        field={'Backend Development'}
+        technology={backEndDev}
+      />
+      <TechField
+        index={2}
+        field={'Mobile Development'}
+        technology={mobileDev}
+      />
+      <TechField
+        index={3}
         field={'Embedded Software Development'}
         technology={embeddedDev}
       />
-      <TechField field={'Data Science'} technology={dataScience} />
-      <TechField field={'Other'} technology={otherTech} />
+      <TechField index={4} field={'Data Science'} technology={dataScience} />
+      <TechField index={5} field={'Other'} technology={otherTech} />
     </>
   );
 };

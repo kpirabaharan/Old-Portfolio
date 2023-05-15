@@ -10,7 +10,6 @@ import { slideIn, fadeIn } from '../utils';
 const InfoCard = ({ index, name, image, value, href, link }) => {
   const isDownload = name === 'Resume' ? true : false;
   const isLink = link ? 'underline underline-offset-4' : '';
-  // const fadeInTime = parseInt(((index + 1) / 2).toFixed(0));
 
   return (
     <motion.div variants={fadeIn('up', 'spring', 1 + index * 0.25, 0.5, 0.5)}>
@@ -34,7 +33,7 @@ const Contact = () => {
     <div className={`flex flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn('up', 'tween', 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='bg-black-100 p-8 rounded-2xl'
       >
         <h3 className={styles.sectionHeadText}>
           Contact Me At <span className='hidden sm:inline'>...</span>
@@ -44,11 +43,6 @@ const Contact = () => {
             <InfoCard key={`project-${ind}`} index={ind} {...info} />
           ))}
         </div>
-        {/* <div className='mt-2 flex flex-col md:flex-row justify-between gap-7'>
-          {socialInfo.map((info, ind) => (
-            <InfoCard key={`project-${ind}`} index={ind} {...info} />
-          ))}
-        </div> */}
       </motion.div>
 
       {/* <motion.div

@@ -11,6 +11,11 @@ import menu from './menu.svg';
 import close from './close.svg';
 import down from './down.svg';
 
+import opg from './company/opg.png';
+import cw from './company/cw.png';
+
+import western from './western.png';
+
 import html from './tech/html.png';
 import css from './tech/css.png';
 import javascript from './tech/javascript.png';
@@ -37,9 +42,6 @@ import raspberryPi from './tech/raspberry-pi.png';
 
 import git from './tech/git.png';
 
-import opg from './company/opg.png';
-import cw from './company/cw.png';
-
 import sociopedia from './sociopedia.png';
 import ecommerce from './ecommerce.png';
 import velocityvoyage from './velocityvoyage.png';
@@ -60,6 +62,9 @@ export {
   menu,
   close,
   down,
+  opg,
+  cw,
+  western,
   html,
   css,
   javascript,
@@ -80,8 +85,6 @@ export {
   arduino,
   raspberryPi,
   git,
-  opg,
-  cw,
   sociopedia,
   ecommerce,
   velocityvoyage,
