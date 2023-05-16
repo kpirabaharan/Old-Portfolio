@@ -16,8 +16,7 @@ module.exports = {
         card: '0px 35px 120px -15px #211e35',
       },
       backgroundImage: {
-        wallpaper: "url('/src/assets/bg-wallpaper.jpg')",
-        'wallpaper-2': "url('/src/assets/bg-wallpaper-2.jpg')",
+        wallpaper: "url('/bg-wallpaper.jpg')",
         'gradient-bluewhite': 'linear-gradient(135deg, #E3F0FF, #FAFCFF)',
       },
       fontFamily: {

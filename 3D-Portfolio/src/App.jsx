@@ -28,7 +28,14 @@ const App = () => {
       <div className='relative z-0 bg-primary'>
         {isDoneLoading ? (
           <>
-            <div className='bg-wallpaper h-screen bg-cover bg-no-repeat bg-center'>
+            <div className='h-screen w-full'>
+              <div className='absolute h-screen w-full'>
+                <img
+                  className='h-full w-full object-cover'
+                  src='/bg-wallpaper.jpg'
+                  alt='BG Wallpaper'
+                />
+              </div>
               <Navbar />
               <Hero setIsCompleted={setIsDoneLoading} />
             </div>
