@@ -7,13 +7,13 @@ const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (
       <motion.section
-        id={idName}
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.padding} max-w-7xl w-5/6 mx-auto relative z-0`}
       >
+        <div id={idName} className='absolute -top-[80px] sm:-top-[84px]' />
         <Component />
       </motion.section>
     );

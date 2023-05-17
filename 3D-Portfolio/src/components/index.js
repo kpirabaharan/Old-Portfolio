@@ -1,4 +1,4 @@
-import { BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { ComputersCanvas, StarsCanvas } from './canvas';
 import Landing from './Landing';
 import Navbar from './Navbar';
 import Hero from './Hero';
@@ -21,7 +21,6 @@ export {
   Projects,
   Feedbacks,
   Contact,
-  BallCanvas,
   ComputersCanvas,
   StarsCanvas,
 };

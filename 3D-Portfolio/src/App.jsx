@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import {
@@ -30,11 +30,13 @@ const App = () => {
           <>
             <div className='h-screen w-full'>
               <div className='absolute h-screen w-full'>
-                <img
-                  className='h-full w-full object-cover'
-                  src='/bg-wallpaper.jpg'
-                  alt='BG Wallpaper'
-                />
+                <Suspense fallback={<div className='bg-primary' />}>
+                  <img
+                    className='h-full w-full object-cover'
+                    src='/bg-wallpaper.jpg'
+                    alt='BG Wallpaper'
+                  />
+                </Suspense>
               </div>
               <Navbar />
               <Hero setIsCompleted={setIsDoneLoading} />

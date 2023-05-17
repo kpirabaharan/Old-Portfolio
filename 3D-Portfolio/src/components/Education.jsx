@@ -6,7 +6,6 @@ import { education } from '../constants';
 import { textVariant } from '../utils';
 
 const EducationCard = ({ education }) => {
-  console.log(education);
   return (
     <div className='mt-4 flex flex-row bg-black-100 p-8 rounded-2xl justify-center items-center'>
       <div className='w-[100px] h-[100px]'>
@@ -23,8 +22,7 @@ const EducationCard = ({ education }) => {
           </p>
         </div>
         <p className='md:text-2xl sm:text-lg text-[14px] font-semibold'>
-          {education.degree}
-          <span className='font-medium italic'> with distinction</span>
+          {education.degree} with distinction
         </p>
         <p className='md:text-2xl sm:text-lg text-[14px] font-semibold'>
           {education.date}
