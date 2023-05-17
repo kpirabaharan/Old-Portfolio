@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils';
-import { BallCanvas } from './canvas/';
 import {
   frontEndDev,
   backEndDev,
@@ -17,16 +16,16 @@ const TechField = ({ index, field, technology }) => {
   return (
     <div className='w-full h-full pt-8 pb-2'>
       <motion.div
-        variants={fadeIn('right', 'spring', 0.5 + index * 0.5, 1)}
-        className='flex flex-row'
+        variants={fadeIn('right', 'spring', 0.25 + index * 0.25, 0.5)}
+        className='flex flex-row justify-center sm:justify-start'
       >
         <p className={styles.sectionSubText}>{field}</p>
       </motion.div>
-      <div className='flex flex-row flex-wrap pt-6 gap-10 h-full w-full'>
+      <div className='flex flex-row flex-wrap justify-center sm:justify-start pt-6 pb-4 sm:pb-0 gap-y-10 sm:gap-10 h-full w-full'>
         {technology.map((tech) => {
           return (
             <motion.div
-              variants={fadeIn('right', 'spring', 0.5 + index * 0.5, 1)}
+              variants={fadeIn('right', 'spring', 0.25 + index * 0.25, 0.5)}
               className='w-[100px] h-[50px] sm:w-[75px] sm:h-[75px] flex flex-col justify-center 
                 items-center'
               key={`${field}${tech.name}`}
