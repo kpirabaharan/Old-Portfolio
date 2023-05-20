@@ -23,6 +23,12 @@ const App = () => {
     );
   }, []);
 
+  const canvas = document.createElement('canvas');
+  var gl;
+  try {
+    gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  } catch (err) {}
+
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
@@ -50,7 +56,7 @@ const App = () => {
             </div>
             <div className='relative z-0'>
               <Contact />
-              <StarsCanvas />
+              {gl ? <StarsCanvas /> : <></>}
             </div>
           </>
         ) : (

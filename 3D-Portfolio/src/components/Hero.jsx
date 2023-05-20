@@ -6,6 +6,12 @@ import { ComputersCanvas } from './canvas/';
 import TypedContent from './TypeAnimation';
 
 const Hero = ({ setIsCompleted }) => {
+  const canvas = document.createElement('canvas');
+  var gl;
+  try {
+    gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  } catch (err) {}
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div
@@ -25,7 +31,16 @@ const Hero = ({ setIsCompleted }) => {
           </p>
           <div className='flex-grow'></div>
           <div className='h-[60%] mb-10'>
-            <ComputersCanvas />
+            {gl ? (
+              <ComputersCanvas />
+            ) : (
+              <div className='h-full flex flex-row justify-center items-center'>
+                <p className=''>
+                  Enable hardware acceleration or WebGL to interact with 3D
+                  Model{' '}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
