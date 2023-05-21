@@ -62,13 +62,13 @@ const about = `I'm a Mechatronics/Software engineer with experience in Javascrip
 
 const typedLanding = [
   'I am a Full Stack Developer',
-  1000,
+  500,
   'I am a Mobile App Developer',
-  1000,
-  'I am a Embedded Systems Engineer',
-  1000,
+  500,
+  'I am an Embedded Systems Engineer',
+  500,
   'I am a Mechatronics/Software Engineer',
-  1000,
+  500,
 ];
 
 const typedHero = [
@@ -76,7 +76,7 @@ const typedHero = [
   1000,
   'I am a Mobile App Developer',
   1000,
-  'I am a Embedded Systems Engineer',
+  'I am an Embedded Systems Engineer',
   1000,
   'I am a Mechatronics/Software Engineer',
   5000,
@@ -119,7 +119,7 @@ const frontEndDev = [
     icon: typescript,
   },
   {
-    name: 'React JS',
+    name: 'ReactJS',
     icon: reactjs,
   },
   {
@@ -138,7 +138,7 @@ const backEndDev = [
     icon: javascript,
   },
   {
-    name: 'Node JS',
+    name: 'NodeJS',
     icon: nodejs,
   },
   {
