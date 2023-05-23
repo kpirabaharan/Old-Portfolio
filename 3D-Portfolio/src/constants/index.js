@@ -29,6 +29,7 @@ import {
   ecommerce,
   velocityvoyage,
   sociopedia,
+  robot,
   location,
   mail,
   linkedin,
@@ -245,6 +246,32 @@ const education = {
 
 const projects = [
   {
+    name: '4 DOF Robot',
+    description:
+      'Built and programmed a 4-DoF robotic arm as a mechatronic project,\
+       capable of precise and coordinated movements for various applications.',
+    tags: [
+      {
+        name: 'arduino',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'raspberry pi',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mechatronics',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: '3d printed',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: robot,
+    source_code_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
+  },
+  {
     name: 'Velocity Voyage',
     description:
       'The endless runner video game, created with Unity, offers players an exciting \
@@ -263,7 +290,7 @@ const projects = [
     source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
   },
   {
-    name: 'E-Commerce',
+    name: 'Tech Trendz',
     description:
       'This Web/Mobile application utilizes Stripe API to provide a secure online \
       shopping experience for users to purchase technology products with confidence.',

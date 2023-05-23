@@ -45,6 +45,7 @@ import git from './tech/git.png';
 import sociopedia from './sociopedia.png';
 import ecommerce from './ecommerce.png';
 import velocityvoyage from './velocityvoyage.png';
+import robot from './robot.jpg';
 
 import mail from './mail.svg';
 import location from './location.svg';
@@ -88,6 +89,7 @@ export {
   sociopedia,
   ecommerce,
   velocityvoyage,
+  robot,
   mail,
   location,
   linkedin,
