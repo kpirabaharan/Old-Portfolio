@@ -9,6 +9,7 @@ import github from './github.png';
 
 import menu from './menu.svg';
 import close from './close.svg';
+import rightArrow from './right-arrow.svg';
 import down from './down.svg';
 
 import opg from './company/opg.png';
@@ -62,6 +63,7 @@ export {
   github,
   menu,
   close,
+  rightArrow,
   down,
   opg,
   cw,

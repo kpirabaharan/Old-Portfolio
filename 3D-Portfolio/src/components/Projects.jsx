@@ -1,17 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github, rightArrow } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils';
-
-const projectVariant = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-};
 
 const ProjectCard = ({
   index,
@@ -64,6 +60,20 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
+          </div>
+          <div className='absolute inset-0 flex justify-end items-end m-6'>
+            <Link to={'/projects/techtrendz'}>
+              <div
+                className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                items-center cursor-pointer'
+              >
+                <img
+                  src={rightArrow}
+                  alt='github'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </Link>
           </div>
         </div>
         <img

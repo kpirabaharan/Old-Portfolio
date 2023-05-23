@@ -5,7 +5,7 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
-const Navbar = () => {
+const Navbar = ({ isHomePage = true }) => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   return (
@@ -27,60 +27,68 @@ const Navbar = () => {
             Keeshigan <span className='block md:inline'> Pirabaharan</span>
           </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row items-center gap-4 md:gap-8'>
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`
+        {isHomePage ? (
+          <ul className='list-none hidden sm:flex flex-row items-center gap-4 md:gap-8'>
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`
               ${
                 active === link.title ? 'text-white' : 'text-secondary'
               } hover:text-white text-lg font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-          <li
-            className={`outline outline-offset-0 outline-2 rounded-lg text-secondary 
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+            <li
+              className={`outline outline-offset-0 outline-2 rounded-lg text-secondary 
             hover:text-white p-2 text-lg font-medium cursor-pointer`}
-          >
-            <a href='./resume.pdf' download target='_blank'>
-              Resume
-            </a>
-          </li>
-        </ul>
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
-            onClick={() => setToggle(!toggle)}
-          />
-          <div
-            className={`${
-              toggle ? 'flex' : 'hidden'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] 
+            >
+              <a href='./resume.pdf' download target='_blank'>
+                Resume
+              </a>
+            </li>
+          </ul>
+        ) : (
+          <></>
+        )}
+        {isHomePage ? (
+          <div className='sm:hidden flex flex-1 justify-end items-center'>
+            <img
+              src={toggle ? close : menu}
+              alt='menu'
+              className='w-[28px] h-[28px] object-contain cursor-pointer'
+              onClick={() => setToggle(!toggle)}
+            />
+            <div
+              className={`${
+                toggle ? 'flex' : 'hidden'
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] 
               z-10 rounded-xl`}
-          >
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  className={`
+            >
+              <ul className='list-none flex justify-end items-start flex-col gap-4'>
+                {navLinks.map((link) => (
+                  <li
+                    key={link.id}
+                    className={`
               ${
                 active === link.title ? 'text-white' : 'text-secondary'
               } font-poppins cursor-pointer`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(link.title);
+                    }}
+                  >
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+        ) : (
+          <></>
+        )}
       </div>
     </nav>
   );

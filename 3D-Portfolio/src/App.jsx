@@ -1,18 +1,27 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import { HomePage } from './pages';
+import { HomePage, RootLayout, TechTrendzPage } from './pages';
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <HomePage />,
-      // children: [
-      //   {
-      //     path: 'projects',
-      //     element: <ProductPage />,
-      //   },
-      // ],
+      children: [
+        {
+          index: true,
+          element: <HomePage />,
+        },
+        {
+          path: 'projects/',
+          element: <RootLayout />,
+          children: [
+            {
+              path: 'techtrendz',
+              element: <TechTrendzPage />,
+            },
+          ],
+        },
+      ],
     },
   ]);
 
