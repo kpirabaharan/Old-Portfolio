@@ -16,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  webpage_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
@@ -47,34 +48,35 @@ const ProjectCard = ({
           <p className='text-2xl text-white'>{name}</p>
           <p className='mt-7 px-8'>{description}</p>
           <div className='absolute inset-0 flex justify-end m-6'>
-            <div
-              onClick={() => {
-                window.open(source_code_link, '_blank');
-              }}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center 
-                items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='github'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-          <div className='absolute inset-0 flex justify-end items-end m-6'>
-            <Link to={'/projects/techtrendz'}>
+            <div className='flex flex-col justify-between'>
               <div
+                onClick={() => {
+                  window.open(source_code_link, '_blank');
+                }}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center 
                 items-center cursor-pointer'
               >
                 <img
-                  src={rightArrow}
+                  src={github}
                   alt='github'
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
-            </Link>
+              <Link to={webpage_link}>
+                <div
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                items-center cursor-pointer'
+                >
+                  <img
+                    src={rightArrow}
+                    alt='github'
+                    className='w-1/2 h-1/2 object-contain'
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
+          {/* <div className='absolute inset-0 flex justify-end items-end m-6'></div> */}
         </div>
         <img
           className='h-full w-screen object-cover rounded-[2rem] p-5'
