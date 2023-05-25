@@ -270,6 +270,7 @@ const projects = [
     ],
     image: robot,
     source_code_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
+    webpage_link: '/projects/robot',
   },
   {
     name: 'Velocity Voyage',
@@ -288,6 +289,7 @@ const projects = [
     ],
     image: velocityvoyage,
     source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
+    webpage_link: '/projects/velocityvoyage',
   },
   {
     name: 'Tech Trendz',
@@ -318,6 +320,7 @@ const projects = [
     ],
     image: ecommerce,
     source_code_link: 'https://github.com/kpirabaharan/E-Commerce',
+    webpage_link: '/projects/techtrendz',
   },
   {
     name: 'Sociopedia',
@@ -348,6 +351,7 @@ const projects = [
     ],
     image: sociopedia,
     source_code_link: 'https://github.com/kpirabaharan/Social-Media-App',
+    webpage_link: '/projects/sociopedia',
   },
 ];
 
@@ -395,6 +399,14 @@ const contactInfo = [
   },
 ];
 
+const techtrendz = {
+  description:
+    'This is an E-commerce Full Stack Web and Mobile Application that provides a \
+    complete end-to-end solution for online shopping. It is built using modern web \
+    technologies and follows a full stack architecture, consisting of a front-end \
+    client, back-end server, and a flutter-based mobile application.',
+};
+
 export {
   about,
   typedLanding,
@@ -410,4 +422,5 @@ export {
   education,
   projects,
   contactInfo,
+  techtrendz,
 };

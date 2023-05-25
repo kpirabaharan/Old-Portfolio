@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import { styles } from '../styles';
+import { leftArrow } from '../assets';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
@@ -13,7 +13,24 @@ const Navbar = ({ isHomePage = true }) => {
       className='sm:px-8 px-6 fixed w-full flex items-center py-5 top-0 z-20
         bg-primary'
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      {!isHomePage ? (
+        <Link to={'/'}>
+          <div className='w-10 h-10 mx-4 cursor-pointer sm:hidden'>
+            <img
+              className='h-full w-full object-contain'
+              src={leftArrow}
+              alt='back'
+            />
+          </div>
+        </Link>
+      ) : (
+        <></>
+      )}
+      <div
+        className={`w-full flex ${
+          isHomePage ? 'justify-between' : 'sm:justify-center'
+        } items-center max-w-7xl mx-auto`}
+      >
         <Link
           to={'/'}
           className='flex items-center gap-2'

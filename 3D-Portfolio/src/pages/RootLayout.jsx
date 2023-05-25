@@ -1,23 +1,23 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
+import { leftArrow } from '../assets';
 import { Navbar } from '../components/';
 import { styles } from '../styles';
 
 const RootLayout = () => {
   return (
-    <>
+    <div className='absolute h-full w-full bg-[#050505]'>
       <Navbar isHomePage={false} />
-      <main className=''>
-        <div
-          className={`${styles.padding} max-w-7xl w-5/6 mx-auto relative z-0`}
-        >
-          <div className='absolute top-[120px]'>
-            <Outlet />
-          </div>
+      <Link to={'/'}>
+        <div className='hidden sm:block fixed top-[120px] left-8 w-10 h-10 z-20 cursor-pointer'>
+          <img src={leftArrow} alt='' />
         </div>
+      </Link>
+      <main className={`absolute top-[120px] w-full ${styles.paddingX}`}>
+        <Outlet />
       </main>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,13 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import { HomePage, RootLayout, TechTrendzPage } from './pages';
+import {
+  HomePage,
+  RootLayout,
+  RobotPage,
+  VelocityVoyagePage,
+  TechTrendzPage,
+  SociopediaPage,
+} from './pages';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -16,8 +23,20 @@ const App = () => {
           element: <RootLayout />,
           children: [
             {
+              path: 'robot',
+              element: <RobotPage />,
+            },
+            {
+              path: 'velocityvoyage',
+              element: <VelocityVoyagePage />,
+            },
+            {
               path: 'techtrendz',
               element: <TechTrendzPage />,
+            },
+            {
+              path: 'sociopedia',
+              element: <SociopediaPage />,
             },
           ],
         },
