@@ -1,5 +1,7 @@
+import { useState, useEffect } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import { Landing } from './components';
 import {
   HomePage,
   RootLayout,
@@ -10,6 +12,14 @@ import {
 } from './pages';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -46,7 +56,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      <RouterProvider router={router} />
+      {loading ? <Landing /> : <RouterProvider router={router} />}
     </div>
   );
 };
