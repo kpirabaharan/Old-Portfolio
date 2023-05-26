@@ -1,17 +1,11 @@
-import { styles } from '../styles';
-import { typedLanding } from '../constants';
-import TypedContent from './TypeAnimation';
-
-const Landing = ({ setIsCompleted }) => {
+const Landing = () => {
   return (
     <section className='w-full h-screen mx-auto'>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <h1 className={`${styles.heroHeadText} text-white`}>
-          Hi, I'm <span className='text-[#3d38c9]'>Keeshigan</span>
+      <div className='flex flex-col justify-center items-center text-center w-full h-full'>
+        <h1 className={`text-2xl text-white`}>
+          Keeshigan Pirabaharan
+          <span className='text-[#4e4d81] block sm:inline'> Portfolio</span>
         </h1>
-        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          <TypedContent text={typedLanding} setIsCompleted={setIsCompleted} />
-        </p>
       </div>
     </section>
   );

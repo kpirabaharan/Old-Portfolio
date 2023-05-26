@@ -14,16 +14,13 @@ import {
 } from '../components/';
 
 const HomePage = () => {
-  const [isDoneLoading, setIsDoneLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (window.localStorage.getItem('isDoneLoading') === 'true') {
-      setIsDoneLoading(
-        JSON.parse(window.localStorage.getItem('isDoneLoading') === 'true'),
-      );
-    } else {
-      setIsDoneLoading(false);
-    }
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
   }, []);
 
   const canvas = document.createElement('canvas');
@@ -34,11 +31,11 @@ const HomePage = () => {
 
   return (
     <div className='relative z-0 bg-primary'>
-      {isDoneLoading ? (
+      {!isLoading ? (
         <>
           <div className='bg-wallpaper h-screen bg-cover bg-no-repeat bg-center'>
             <Navbar />
-            <Hero setIsCompleted={setIsDoneLoading} />
+            <Hero />
           </div>
           <div className='bg-[#050505]'>
             <About />
@@ -53,7 +50,7 @@ const HomePage = () => {
           </div>
         </>
       ) : (
-        <Landing setIsCompleted={setIsDoneLoading} />
+        <Landing />
       )}
     </div>
   );

@@ -1,15 +1,9 @@
 import { TypeAnimation } from 'react-type-animation';
 
-const TypedContent = ({ text, setIsCompleted }) => {
+const TypedContent = ({ text }) => {
   return (
     <TypeAnimation
-      sequence={[
-        ...text,
-        () => {
-          window.localStorage.setItem('isDoneLoading', 'true');
-          return setIsCompleted(true);
-        },
-      ]}
+      sequence={[...text]}
       wrapper='span'
       cursor={true}
       repeat={Infinity}
