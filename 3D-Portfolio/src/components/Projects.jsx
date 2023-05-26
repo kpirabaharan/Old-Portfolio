@@ -26,18 +26,32 @@ const ProjectCard = ({
         className='bg-tertiary rounded-2xl sm:w-[360px] w-full h-[350px]'
       >
         <div className='absolute inset-0 flex justify-end m-6'>
-          <div
-            onClick={() => {
-              window.open(source_code_link, '_blank');
-            }}
-            className='black-gradient w-10 h-10 rounded-full flex justify-center 
+          <div className='flex flex-col justify-between'>
+            <div
+              onClick={() => {
+                window.open(source_code_link, '_blank');
+              }}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center 
                 items-center cursor-pointer'
-          >
-            <img
-              src={github}
-              alt='github'
-              className='w-1/2 h-1/2 object-contain'
-            />
+            >
+              <img
+                src={github}
+                alt='github'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+            <Link to={webpage_link}>
+              <div
+                className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                items-center cursor-pointer'
+              >
+                <img
+                  src={rightArrow}
+                  alt='github'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </Link>
           </div>
         </div>
         <div

@@ -401,10 +401,7 @@ const contactInfo = [
 
 const techtrendz = {
   description:
-    'This is an E-commerce Full Stack Web and Mobile Application that provides a \
-    complete end-to-end solution for online shopping. It is built using modern web \
-    technologies and follows a full stack architecture, consisting of a front-end \
-    client, back-end server, and a flutter-based mobile application.',
+    'This E-commerce project consists of a website built with React, coupled with a Flutter mobile application, offers a seamless and comprehensive platform for online shopping. With its user-friendly interface and robust functionality, customers can browse and purchase products effortlessly, while enjoying a consistent experience across both web and mobile platforms. The MERN stack ensures efficient and scalable performance, while the Flutter app provides a responsive and intuitive mobile experience, enhancing accessibility for customers on the go.',
 };
 
 export {

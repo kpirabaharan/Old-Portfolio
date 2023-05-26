@@ -17,9 +17,13 @@ const HomePage = () => {
   const [isDoneLoading, setIsDoneLoading] = useState(false);
 
   useEffect(() => {
-    setIsDoneLoading(
-      JSON.parse(window.localStorage.getItem('isDoneLoading') === 'true'),
-    );
+    if (window.localStorage.getItem('isDoneLoading') === 'true') {
+      setIsDoneLoading(
+        JSON.parse(window.localStorage.getItem('isDoneLoading') === 'true'),
+      );
+    } else {
+      setIsDoneLoading(false);
+    }
   }, []);
 
   const canvas = document.createElement('canvas');
