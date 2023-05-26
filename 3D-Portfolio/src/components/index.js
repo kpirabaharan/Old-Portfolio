@@ -1,4 +1,5 @@
 import { ComputersCanvas, StarsCanvas } from './canvas';
+import { ProjectHeader } from './project';
 import Landing from './Landing';
 import Navbar from './Navbar';
 import Hero from './Hero';
@@ -11,6 +12,9 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 
 export {
+  ComputersCanvas,
+  StarsCanvas,
+  ProjectHeader,
   Landing,
   Navbar,
   Hero,
@@ -21,6 +25,4 @@ export {
   Projects,
   Feedbacks,
   Contact,
-  ComputersCanvas,
-  StarsCanvas,
 };

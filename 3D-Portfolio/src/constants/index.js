@@ -399,9 +399,60 @@ const contactInfo = [
   },
 ];
 
-const techtrendz = {
+const robotProject = {
+  name: '4 DoF Robot',
+  status: 'Ongoing',
+  category: 'Mechatronics System',
   description:
-    'This E-commerce project consists of a website built with React, coupled with a Flutter mobile application, offers a seamless and comprehensive platform for online shopping. With its user-friendly interface and robust functionality, customers can browse and purchase products effortlessly, while enjoying a consistent experience across both web and mobile platforms. The MERN stack ensures efficient and scalable performance, while the Flutter app provides a responsive and intuitive mobile experience, enhancing accessibility for customers on the go.',
+    'This E-commerce project consists of a website built with React, coupled with \
+    a Flutter mobile application, offers a seamless and comprehensive platform for \
+    online shopping. With its user-friendly interface and robust functionality, \
+    customers can browse and purchase products effortlessly, while enjoying a consistent \
+    experience across both web and mobile platforms. The MERN stack ensures \
+    efficient and scalable performance, while the Flutter app provides a responsive \
+    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+};
+
+const velocityVoyageProject = {
+  name: 'Velocity Voyage',
+  status: 'Completed',
+  category: 'Unity Game',
+  description:
+    'This E-commerce project consists of a website built with React, coupled with \
+    a Flutter mobile application, offers a seamless and comprehensive platform for \
+    online shopping. With its user-friendly interface and robust functionality, \
+    customers can browse and purchase products effortlessly, while enjoying a consistent \
+    experience across both web and mobile platforms. The MERN stack ensures \
+    efficient and scalable performance, while the Flutter app provides a responsive \
+    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+};
+
+const techTrendzProject = {
+  name: 'Tech Trendz',
+  status: 'Completed',
+  category: 'MERN Full Stack + Mobile App',
+  description:
+    'This E-commerce project consists of a website built with React, coupled with \
+    a Flutter mobile application, offers a seamless and comprehensive platform for \
+    online shopping. With its user-friendly interface and robust functionality, \
+    customers can browse and purchase products effortlessly, while enjoying a consistent \
+    experience across both web and mobile platforms. The MERN stack ensures \
+    efficient and scalable performance, while the Flutter app provides a responsive \
+    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+};
+
+const sociopediaProject = {
+  name: 'Sociopedia',
+  status: 'Completed',
+  category: 'MERN Full Stack + Mobile App',
+  description:
+    'This E-commerce project consists of a website built with React, coupled with \
+    a Flutter mobile application, offers a seamless and comprehensive platform for \
+    online shopping. With its user-friendly interface and robust functionality, \
+    customers can browse and purchase products effortlessly, while enjoying a consistent \
+    experience across both web and mobile platforms. The MERN stack ensures \
+    efficient and scalable performance, while the Flutter app provides a responsive \
+    and intuitive mobile experience, enhancing accessibility for customers on the go.',
 };
 
 export {
@@ -419,5 +470,8 @@ export {
   education,
   projects,
   contactInfo,
-  techtrendz,
+  robotProject,
+  velocityVoyageProject,
+  techTrendzProject,
+  sociopediaProject,
 };
