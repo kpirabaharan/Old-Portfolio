@@ -35,6 +35,7 @@ module.exports = {
         'gradient-teal': 'linear-gradient(135deg, #448b9c, #080609)',
       },
       fontFamily: {
+        kaushan: ['Kaushan Script', 'cursive'],
         playfair: ['Playfair Display', 'serif'],
         opensans: ['Open Sans', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],

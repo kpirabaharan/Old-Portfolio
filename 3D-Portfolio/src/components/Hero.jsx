@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { HashLink } from 'react-router-hash-link';
 
 import { styles } from '../styles';
 import { typedHero } from '../constants';
@@ -18,15 +19,13 @@ const Hero = () => {
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl 
           mx-auto flex flex-row items-start gap-5`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-teal' />
-          <div className='w-1 sm:h-80 h-40 bg-gradient-teal' />
-        </div>
+        <div className='flex flex-col justify-center items-center mt-5'></div>
         <div className='flex flex-col justify-start w-full h-full'>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-teal'>Keeshigan</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-teal`}>
+          <p className={`${styles.heroPreText}text-white`}>Hi, my name is</p>
+          <p className={`${styles.heroHeadText} text-teal`}>
+            Keeshigan Pirabaharan
+          </p>
+          <p className={`${styles.heroSubText} mt-2 text-white`}>
             <TypedContent text={typedHero} />
           </p>
           <div className='flex-grow'></div>
@@ -48,7 +47,7 @@ const Hero = () => {
         className='absolute bottom-8 sm:-bottom-6 w-full flex justify-center 
           items-center cursor-pointer z-10'
       >
-        <a href='#about'>
+        <HashLink to={'#about'}>
           <div
             className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary
               flex justify-center items-start p-2'
@@ -63,7 +62,7 @@ const Hero = () => {
               className='w-3 h-3 rounded-full bg-secondary'
             ></motion.div>
           </div>
-        </a>
+        </HashLink>
       </div>
     </section>
   );

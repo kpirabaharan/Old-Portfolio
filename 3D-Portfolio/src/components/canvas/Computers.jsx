@@ -6,7 +6,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isSmall, isMedium }) => {
-  const computerdesk = useGLTF('./low_poly_gaming_desk/scene.gltf');
+  const computerdesk = useGLTF('./computer_desk/scene.gltf');
 
   return (
     <mesh>

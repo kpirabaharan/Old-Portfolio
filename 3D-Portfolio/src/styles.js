@@ -3,10 +3,12 @@ const styles = {
   paddingY: 'sm:py-16 py-6',
   padding: 'sm:px-16 px-2 sm:py-16 py-10',
 
+  heroPreText:
+    'font-medium lg:text-[30px] sm:text-[22px] xs:text-[18px] text-[16px]',
   heroHeadText:
-    'font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2',
+    'font-kaushan lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]',
   heroSubText:
-    'font-medium lg:text-[45px] sm:text-[30px] xs:text-[24px] text-[20px] lg:leading-[40px]',
+    'font-medium lg:text-[48px] sm:text-[32px] xs:text-[26px] text-[22px]',
 
   sectionHeadText:
     'text-white font-black lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]',
