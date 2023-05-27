@@ -7,12 +7,9 @@ const ProjectHeader = ({ name, status, description }) => {
     <>
       <p className={styles.heroHeadText}>{name}</p>
       <p className={`${styles.projectSubText} italic`}>Status - {status}</p>
-      <p className='mt-2 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+      <p className='mt-2 text-secondary-2 text-[17px] max-w-3xl leading-[30px]'>
         {description}
       </p>
-      {/* <p className={`${styles.sectionHeadText} ${styles.paddingY}`}>
-        Front-End
-      </p> */}
     </>
   );
 };

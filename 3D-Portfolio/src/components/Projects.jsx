@@ -110,7 +110,7 @@ const Projects = () => {
 
       <div className='w-full flex'>
         <motion.p
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary-2 text-[17px] max-w-3xl leading-[30px]'
           variants={fadeIn('', '', 0.2, 1)}
         >
           The following projects showcases my skills and expertise in various

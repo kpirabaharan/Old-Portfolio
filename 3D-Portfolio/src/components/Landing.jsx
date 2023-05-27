@@ -7,9 +7,9 @@ const Landing = ({ loading }) => {
       <div className='flex flex-col justify-center items-center text-center w-full h-full'>
         <h1 className={`text-2xl text-white animate-pulse`}>
           Keeshigan Pirabaharan
-          <span className='text-[#4e4d81] block sm:inline'> Portfolio</span>
+          <span className='text-teal block sm:inline'> Portfolio</span>
         </h1>
-        <DotLoader className='mt-8' color={'#4e4d81'} loading={loading} />
+        <DotLoader className='mt-8' color={'#448b9c'} loading={loading} />
       </div>
     </section>
   );

@@ -61,17 +61,6 @@ const about = `I'm a Mechatronics/Software engineer with experience in Javascrip
  I'm a quick learner with the willingness to learn new technologies to create 
  efficient and scalable solutions that solve real-world problems.`;
 
-// const typedLanding = [
-//   'I am a Full Stack Developer',
-//   500,
-//   'I am a Mobile App Developer',
-//   500,
-//   'I am an Embedded Systems Engineer',
-//   500,
-//   'I am a Mechatronics/Software Engineer',
-//   500,
-// ];
-
 const typedHero = [
   'I am a Full Stack Developer',
   1000,
@@ -457,7 +446,6 @@ const sociopediaProject = {
 
 export {
   about,
-  // typedLanding,
   typedHero,
   services,
   frontEndDev,

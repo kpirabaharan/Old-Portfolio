@@ -40,7 +40,7 @@ const Navbar = ({ isHomePage = true }) => {
           }}
         >
           <img src={logo} alt='logo' className='h-9 object-contain pr-2' />
-          <p className='text-white text-lg leading-[20px] font-semibold cursor-pointer'>
+          <p className='text-white-100 hover:text-white-100 text-lg leading-[20px] font-semibold cursor-pointer'>
             Keeshigan <span className='block md:inline'> Pirabaharan</span>
           </p>
         </Link>

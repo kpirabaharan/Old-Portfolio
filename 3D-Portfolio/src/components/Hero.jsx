@@ -19,14 +19,14 @@ const Hero = () => {
           mx-auto flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#3d38c9]' />
-          <div className='w-1 sm:h-80 h-40 blue-gradient' />
+          <div className='w-5 h-5 rounded-full bg-teal' />
+          <div className='w-1 sm:h-80 h-40 bg-gradient-teal' />
         </div>
         <div className='flex flex-col justify-start w-full h-full'>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#3d38c9]'>Keeshigan</span>
+            Hi, I'm <span className='text-teal'>Keeshigan</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-teal`}>
             <TypedContent text={typedHero} />
           </p>
           <div className='flex-grow'></div>

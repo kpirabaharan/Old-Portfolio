@@ -18,8 +18,10 @@ module.exports = {
       }),
       colors: {
         primary: '#080609',
-        secondary: '#aaa6c3',
+        secondary: '#9DCBD7',
+        'secondary-2': '#BADAE2',
         tertiary: '#151030',
+        teal: '#448b9c',
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',
@@ -29,7 +31,7 @@ module.exports = {
       },
       backgroundImage: {
         wallpaper: "url('/bg-wallpaper.jpg')",
-        'gradient-bluewhite': 'linear-gradient(135deg, #E3F0FF, #FAFCFF)',
+        'gradient-teal': 'linear-gradient(135deg, #448b9c, #080609)',
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],

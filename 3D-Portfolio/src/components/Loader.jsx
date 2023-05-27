@@ -1,15 +1,11 @@
-import { Html, useProgress } from '@react-three/drei';
-
-import { LoadingSpinner } from './LoadingSpinner';
+import { Html } from '@react-three/drei';
+import { HashLoader } from 'react-spinners';
 
 const Loader = () => {
-  const { progress } = useProgress();
-
   return (
     <Html>
       <div className='relative right-11 bottom-6 flex flex-row'>
-        <p className=' text-white text-center'>{progress.toFixed(0)}%</p>
-        <LoadingSpinner />
+        <HashLoader color={'#448b9c'} />
       </div>
     </Html>
   );
