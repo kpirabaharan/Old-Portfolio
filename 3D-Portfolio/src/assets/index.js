@@ -38,10 +38,17 @@ import python from './tech/python.png';
 import tensorflow from './tech/tensorflow.png';
 
 import c from './tech/C.png';
+import cpp from './tech/cplusplus.png';
 import linux from './tech/linux.png';
+import network from './tech/network.png';
+
+import solidworks from './tech/solidworks.png';
 import arduino from './tech/Arduino.png';
 import raspberryPi from './tech/raspberry-pi.png';
+import additivemanufacturing from './tech/additive_manufacturing.png';
 
+import aws from './tech/aws.png';
+import docker from './tech/docker.png';
 import git from './tech/git.png';
 
 import sociopedia from './sociopedia.png';
@@ -86,9 +93,15 @@ export {
   python,
   tensorflow,
   c,
+  cpp,
   linux,
+  network,
+  solidworks,
   arduino,
   raspberryPi,
+  additivemanufacturing,
+  aws,
+  docker,
   git,
   sociopedia,
   ecommerce,

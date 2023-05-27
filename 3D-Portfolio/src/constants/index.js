@@ -12,17 +12,23 @@ import {
   embedded,
   nodejs,
   mongodb,
-  git,
   python,
-  raspberryPi,
+  mySQL,
   dart,
   flutter,
   kotlin,
-  arduino,
   tensorflow,
   c,
-  mySQL,
+  cpp,
   linux,
+  network,
+  solidworks,
+  arduino,
+  raspberryPi,
+  additivemanufacturing,
+  aws,
+  docker,
+  git,
   opg,
   cw,
   western,
@@ -162,8 +168,23 @@ const embeddedDev = [
     icon: c,
   },
   {
+    name: 'C++',
+    icon: cpp,
+  },
+  {
     name: 'Linux',
     icon: linux,
+  },
+  {
+    name: 'Network Protocols',
+    icon: network,
+  },
+];
+
+const mechatronicsDev = [
+  {
+    name: 'SolidWorks',
+    icon: solidworks,
   },
   {
     name: 'Arduino',
@@ -172,6 +193,10 @@ const embeddedDev = [
   {
     name: 'Raspberry Pi',
     icon: raspberryPi,
+  },
+  {
+    name: '3D Printing',
+    icon: additivemanufacturing,
   },
 ];
 
@@ -187,6 +212,14 @@ const dataScience = [
 ];
 
 const otherTech = [
+  {
+    name: 'AWS',
+    icon: aws,
+  },
+  {
+    name: 'Docker',
+    icon: docker,
+  },
   {
     name: 'Git',
     icon: git,
@@ -219,7 +252,6 @@ const experiences = [
       'Managed small scale projects (< $200k) requiring engineering changes to the plant',
       'Assisted senior project managers with capital project (>$200k), including coordination with internal stakeholder and EPC contractors to ensure project success',
       'Exposure to industrial operations, complex system processes, and practical failure modes',
-      'Exposure to technical work done in both mechanical and electrical modifications',
       'Worked with a multidisciplinary team of engineers and technicians to support modifications',
     ],
   },
@@ -452,6 +484,7 @@ export {
   backEndDev,
   mobileDev,
   embeddedDev,
+  mechatronicsDev,
   dataScience,
   otherTech,
   experiences,

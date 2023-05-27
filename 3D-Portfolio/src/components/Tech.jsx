@@ -9,6 +9,7 @@ import {
   mobileDev,
   embeddedDev,
   dataScience,
+  mechatronicsDev,
   otherTech,
 } from '../constants';
 
@@ -30,7 +31,6 @@ const TechField = ({ index, field, technology }) => {
                 items-center'
               key={`${field}${tech.name}`}
             >
-              {/* <BallCanvas icon={tech.icon} /> */}
               <div className='w-[90%] h-[90%] flex justify-center'>
                 <img
                   className='w-full h-full object-contain'
@@ -73,8 +73,13 @@ const Tech = () => {
         field={'Embedded Software Development'}
         technology={embeddedDev}
       />
-      <TechField index={4} field={'Data Science'} technology={dataScience} />
-      <TechField index={5} field={'Other'} technology={otherTech} />
+      <TechField
+        index={4}
+        field={'Mechatronics Engineering'}
+        technology={mechatronicsDev}
+      />
+      <TechField index={5} field={'Data Science'} technology={dataScience} />
+      <TechField index={6} field={'Other'} technology={otherTech} />
     </>
   );
 };
