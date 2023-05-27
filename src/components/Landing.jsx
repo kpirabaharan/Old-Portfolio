@@ -1,7 +1,7 @@
 import React from 'react';
 import { DotLoader } from 'react-spinners';
 
-const Landing = ({ loading }) => {
+const Landing = () => {
   return (
     <section className='w-full h-screen mx-auto bg-primary'>
       <div className='flex flex-col justify-center items-center text-center w-full h-full'>
@@ -9,7 +9,7 @@ const Landing = ({ loading }) => {
           Keeshigan Pirabaharan
           <span className='text-teal block sm:inline'> Portfolio</span>
         </h1>
-        <DotLoader className='mt-8' color={'#448b9c'} loading={loading} />
+        <DotLoader className='mt-8' color={'#448b9c'} />
       </div>
     </section>
   );

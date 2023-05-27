@@ -10,19 +10,36 @@ import {
   TechTrendzPage,
   SociopediaPage,
 } from './pages';
+import { c } from './assets';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
 
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     console.log('Done Loading');
+  //     setLoading(false);
+  //   }, 0);
+  // }, []);
+
+  // This will run one time after the component mounts
   useEffect(() => {
     setLoading(true);
-    // Backup
-    setTimeout(() => {
+    // callback function to call when event triggers
+    const onPageLoad = () => {
       setLoading(false);
-    }, 1000);
-    window.addEventListener('load', () => {
-      setLoading(false);
-    });
+    };
+
+    // Check if the page has already loaded
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      const bgelement = document.getElementById('background-wallpaper');
+      bgelement.addEventListener('load', onPageLoad, false);
+      // Remove the event listener when component unmounts
+      return () => bgelement.removeEventListener('load', onPageLoad);
+    }
   }, []);
 
   const router = createHashRouter([
@@ -61,11 +78,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      {loading ? (
-        <Landing loading={loading} />
-      ) : (
-        <RouterProvider router={router} />
-      )}
+      {loading ? <Landing /> : <RouterProvider router={router} />}
     </div>
   );
 };
