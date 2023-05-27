@@ -22,6 +22,7 @@ module.exports = {
         'secondary-2': '#BADAE2',
         tertiary: '#151030',
         teal: '#448b9c',
+        'dark-teal': '#0d1d31',
         'black-100': '#100d25',
         'black-200': '#090325',
         'white-100': '#f3f3f3',

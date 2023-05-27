@@ -33,7 +33,7 @@ const Contact = () => {
     <div className={`flex flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn('up', 'tween', 0.2, 1)}
-        className='bg-black-100 p-8 rounded-2xl'
+        className='bg-dark-teal p-8 rounded-2xl'
       >
         <h3 className={styles.sectionHeadText}>
           Contact Me At <span className='hidden sm:inline'>...</span>

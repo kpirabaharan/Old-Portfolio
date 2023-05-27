@@ -7,7 +7,7 @@ import { textVariant } from '../utils';
 
 const EducationCard = ({ education }) => {
   return (
-    <div className='mt-4 flex flex-row bg-black-100 p-8 rounded-2xl justify-center items-center'>
+    <div className='mt-4 flex flex-row bg-dark-teal p-8 rounded-2xl justify-center items-center'>
       <div className='w-[100px] h-[100px]'>
         <img
           className='w-full h-full object-contain'

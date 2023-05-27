@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { leftArrow } from '../assets';
 import { navLinks } from '../constants';
@@ -55,7 +56,7 @@ const Navbar = ({ isHomePage = true }) => {
               } hover:text-white text-lg font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <HashLink to={`#${link.id}`}>{link.title}</HashLink>
               </li>
             ))}
             <li
@@ -97,7 +98,7 @@ const Navbar = ({ isHomePage = true }) => {
                       setActive(link.title);
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <HashLink to={`/${link.id}`}>{link.title}</HashLink>
                   </li>
                 ))}
               </ul>

@@ -22,7 +22,7 @@ const ProjectCard = ({
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         tiltReverse={true}
-        className='bg-tertiary rounded-2xl sm:w-[360px] w-full h-[350px]'
+        className='bg-dark-teal rounded-2xl sm:w-[360px] w-full h-[350px]'
       >
         <div className='absolute inset-0 flex justify-end m-6'>
           <div className='flex flex-col justify-between'>

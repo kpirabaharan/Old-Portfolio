@@ -16,7 +16,7 @@ const styles = {
   projectHeadText:
     'font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2',
   projectSubText:
-    'text-[#dfd9ff] font-medium lg:text-[36px] sm:text-[24px] xs:text-[18px] text-[16px]',
+    'text-secondary font-medium lg:text-[36px] sm:text-[24px] xs:text-[18px] text-[16px]',
 };
 
 export { styles };

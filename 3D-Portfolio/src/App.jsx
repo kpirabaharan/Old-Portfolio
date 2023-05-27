@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 
 import { Landing } from './components';
 import {
@@ -16,16 +16,16 @@ const App = () => {
 
   useEffect(() => {
     setLoading(true);
-    window.addEventListener('load', () => {
-      setLoading(false);
-    });
     // Backup
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
+    window.addEventListener('load', () => {
+      setLoading(false);
+    });
   }, []);
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       children: [

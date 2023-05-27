@@ -18,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.118",
     "react-router-dom": "^6.9.0",
+    "react-router-hash-link": "^2.4.3",
     "react-spinners": "^0.13.8",
     "react-type-animation": "^3.0.1",
     "react-vertical-timeline-component": "^3.6.0",
