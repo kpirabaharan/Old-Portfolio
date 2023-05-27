@@ -23,14 +23,19 @@ const HomePage = () => {
         <Navbar />
         <Hero />
       </div>
-      <div className='bg-[#050505]'>
+      {/* <div className='bg-[#050505]'>
         <About />
         <Experience />
         <Education />
         <Tech />
         <Projects />
-      </div>
+      </div> */}
       <div className='relative z-0'>
+        <About />
+        <Experience />
+        <Education />
+        <Tech />
+        <Projects />
         <Contact />
         {gl ? <StarsCanvas /> : <></>}
       </div>

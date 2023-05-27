@@ -4,6 +4,18 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      transitionDelay: {
+        2000: '2000ms',
+      },
+      animation: {
+        fade: 'fadeOut 2s 2s ease-out',
+      },
+      keyframes: (theme) => ({
+        fadeOut: {
+          '0%': { backgroundColor: theme('colors.transparent') },
+          '100%': { backgroundColor: theme('colors.primary') },
+        },
+      }),
       colors: {
         primary: '#080609',
         secondary: '#aaa6c3',

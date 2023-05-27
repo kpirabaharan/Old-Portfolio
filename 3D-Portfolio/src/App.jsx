@@ -12,9 +12,14 @@ import {
 } from './pages';
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+    window.addEventListener('load', () => {
+      setLoading(false);
+    });
+    // Backup
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -56,7 +61,11 @@ const App = () => {
 
   return (
     <div className='app'>
-      {loading ? <Landing /> : <RouterProvider router={router} />}
+      {loading ? (
+        <Landing loading={loading} />
+      ) : (
+        <RouterProvider router={router} />
+      )}
     </div>
   );
 };
