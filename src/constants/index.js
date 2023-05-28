@@ -80,7 +80,7 @@ const typedHero = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Frontend Developer',
     icon: web,
   },
   {
@@ -424,6 +424,7 @@ const robotProject = {
   name: '4 DoF Robot',
   status: 'Ongoing',
   category: 'Mechatronics System',
+  src_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
   description:
     'This E-commerce project consists of a website built with React, coupled with \
     a Flutter mobile application, offers a seamless and comprehensive platform for \
@@ -438,6 +439,7 @@ const velocityVoyageProject = {
   name: 'Velocity Voyage',
   status: 'Completed',
   category: 'Unity Game',
+  src_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
   description:
     'This E-commerce project consists of a website built with React, coupled with \
     a Flutter mobile application, offers a seamless and comprehensive platform for \
@@ -452,6 +454,7 @@ const techTrendzProject = {
   name: 'Tech Trendz',
   status: 'Completed',
   category: 'MERN Full Stack + Mobile App',
+  src_link: 'https://github.com/kpirabaharan/E-Commerce',
   description:
     'This E-commerce project consists of a website built with React, coupled with \
     a Flutter mobile application, offers a seamless and comprehensive platform for \
@@ -466,6 +469,7 @@ const sociopediaProject = {
   name: 'Sociopedia',
   status: 'Completed',
   category: 'MERN Full Stack + Mobile App',
+  src_link: 'https://github.com/kpirabaharan/Social-Media-App',
   description:
     'This E-commerce project consists of a website built with React, coupled with \
     a Flutter mobile application, offers a seamless and comprehensive platform for \

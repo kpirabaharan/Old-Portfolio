@@ -98,7 +98,7 @@ const Navbar = ({ isHomePage = true }) => {
                       setActive(link.title);
                     }}
                   >
-                    <HashLink to={`/${link.id}`}>{link.title}</HashLink>
+                    <HashLink to={`#${link.id}`}>{link.title}</HashLink>
                   </li>
                 ))}
               </ul>

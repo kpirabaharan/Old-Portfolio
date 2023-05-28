@@ -22,48 +22,50 @@ const ProjectCard = ({
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         tiltReverse={true}
-        className='bg-dark-teal rounded-2xl sm:w-[360px] w-full h-[350px]'
+        className='bg-gradient-to-r teal-comp-gradient p-[1px] rounded-2xl sm:w-[360px] w-full h-[350px]'
       >
-        <div
-          className='absolute h-full w-full rounded-2xl opacity-0 hover:opacity-90
+        <div className='flex w-full h-full bg-dark-teal rounded-2xl'>
+          <div
+            className='absolute h-full w-full rounded-2xl opacity-0 hover:opacity-90
           transition duration-500 flex flex-col justify-center items-center text-center
           bg-slate-700 z-10'
-        >
-          <p className='text-2xl text-white'>{name}</p>
-          <p className='mt-7 px-8'>{description}</p>
-        </div>
-        <img
-          className='h-full w-screen object-cover rounded-[2rem] p-5'
-          src={image}
-          alt={name}
-        />
-        <div className='absolute inset-0 flex justify-end m-6'>
-          <div className='flex flex-col justify-between'>
-            <div
-              onClick={() => {
-                window.open(source_code_link, '_blank');
-              }}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center 
-                items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='github'
-                className='w-1/2 h-1/2 object-contain z-20'
-              />
-            </div>
-            <Link to={webpage_link}>
+          >
+            <p className='text-2xl text-white'>{name}</p>
+            <p className='mt-7 px-8'>{description}</p>
+          </div>
+          <img
+            className='h-full w-full object-cover rounded-[1.5rem] p-4'
+            src={image}
+            alt={name}
+          />
+          <div className='absolute inset-0 flex justify-end m-6'>
+            <div className='flex flex-col justify-between'>
               <div
+                onClick={() => {
+                  window.open(source_code_link, '_blank');
+                }}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center 
                 items-center cursor-pointer'
               >
                 <img
-                  src={rightArrow}
-                  alt='project'
+                  src={github}
+                  alt='github'
                   className='w-1/2 h-1/2 object-contain z-20'
                 />
               </div>
-            </Link>
+              <Link to={webpage_link}>
+                <div
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                items-center cursor-pointer'
+                >
+                  <img
+                    src={rightArrow}
+                    alt='project'
+                    className='w-1/2 h-1/2 object-contain z-20'
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </Tilt>

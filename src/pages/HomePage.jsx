@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import {
   Navbar,
   Hero,
@@ -12,11 +13,16 @@ import {
 
 const HomePage = () => {
   const canvas = document.createElement('canvas');
-
   var gl;
   try {
     gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
   } catch (err) {}
+
+  const [homePageHeight, setHomePageHeight] = useState(0);
+  useEffect(() => {
+    setHomePageHeight(document.getElementById('homepage-div').clientHeight);
+    console.log(homePageHeight);
+  }, [homePageHeight]);
 
   return (
     <div className='relative z-0 bg-primary'>
@@ -24,21 +30,14 @@ const HomePage = () => {
         <Navbar />
         <Hero />
       </div>
-      {/* <div className='bg-[#050505]'>
-        <About />
-        <Experience />
-        <Education />
-        <Tech />
-        <Projects />
-      </div> */}
-      <div className='relative z-0'>
+      <div id='homepage-div' className='relative z-0'>
         <About />
         <Experience />
         <Education />
         <Tech />
         <Projects />
         <Contact />
-        {gl ? <StarsCanvas /> : <></>}
+        {gl ? <StarsCanvas height={homePageHeight} /> : <></>}
       </div>
     </div>
   );
