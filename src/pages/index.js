@@ -1,3 +1,4 @@
+import SplashPage from './SplashPage';
 import HomePage from './HomePage';
 import RootLayout from './RootLayout';
 import RobotPage from './RobotPage';
@@ -6,6 +7,7 @@ import TechTrendzPage from './TechTrendzPage';
 import SociopediaPage from './SociopediaPage';
 
 export {
+  SplashPage,
   HomePage,
   RootLayout,
   RobotPage,

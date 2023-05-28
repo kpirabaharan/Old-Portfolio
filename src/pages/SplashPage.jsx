@@ -1,7 +1,7 @@
 import React from 'react';
 import { DotLoader } from 'react-spinners';
 
-const Landing = () => {
+const SplashPage = () => {
   return (
     <section className='w-full h-screen mx-auto bg-primary'>
       <div className='flex flex-col justify-center items-center text-center w-full h-full'>
@@ -15,4 +15,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default SplashPage;

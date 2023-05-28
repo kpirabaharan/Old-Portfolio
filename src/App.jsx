@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { RouterProvider, createHashRouter } from 'react-router-dom';
 
-import { Landing } from './components';
 import {
+  SplashPage,
   HomePage,
   RootLayout,
   RobotPage,
@@ -14,14 +14,6 @@ import { c } from './assets';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     console.log('Done Loading');
-  //     setLoading(false);
-  //   }, 0);
-  // }, []);
 
   // This will run one time after the component mounts
   useEffect(() => {
@@ -35,6 +27,9 @@ const App = () => {
     if (document.readyState === 'complete') {
       onPageLoad();
     } else {
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
       const bgelement = document.getElementById('background-wallpaper');
       bgelement.addEventListener('load', onPageLoad, false);
       // Remove the event listener when component unmounts
@@ -78,7 +73,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      {loading ? <Landing /> : <RouterProvider router={router} />}
+      {loading ? <SplashPage /> : <RouterProvider router={router} />}
     </div>
   );
 };

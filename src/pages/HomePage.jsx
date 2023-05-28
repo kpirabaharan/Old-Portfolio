@@ -12,6 +12,7 @@ import {
 
 const HomePage = () => {
   const canvas = document.createElement('canvas');
+
   var gl;
   try {
     gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
