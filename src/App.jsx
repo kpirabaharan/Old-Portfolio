@@ -31,7 +31,8 @@ const App = () => {
         setLoading(false);
       }, 3000);
       const bgelement = document.getElementById('background-wallpaper');
-      bgelement.addEventListener('load', onPageLoad, false);
+      if (bgelement) bgelement.addEventListener('load', onPageLoad, false);
+      else return setLoading(false);
       // Remove the event listener when component unmounts
       return () => bgelement.removeEventListener('load', onPageLoad);
     }
