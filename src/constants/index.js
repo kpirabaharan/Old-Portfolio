@@ -62,10 +62,13 @@ export const navLinks = [
   },
 ];
 
-const about = `I'm a Mechatronics/Software engineer with experience in Javascript,
- Dart, C and Python, and expertise in Frameworks like React, Node and Express. 
- I'm a quick learner with the willingness to learn new technologies to create 
- efficient and scalable solutions that solve real-world problems.`;
+const about = `I'm a Keeshigan Pirabaharan, a 24-year-old Mechatronics/Software 
+engineer with experience in creating innovative solutions that seamlessly integrate 
+both Frontend and Backend technologies.  I'm a quick learner with the willingness to 
+learn new technologies to create efficient and scalable solutions that solve real-world 
+problems.`;
+
+const opportunity = `I am actively seeking opportunities in full-stack development starting from June 26th, 2023.`;
 
 const typedHero = [
   'I am a Full Stack Developer',
@@ -235,10 +238,10 @@ const experiences = [
     iconBg: '#e51938',
     date: 'June 2022 - Present',
     points: [
-      'Developed automated test software using C and Bash Scripts to perform qualification testing on a vehicle management computer / network switch hybrid device',
-      'Collaborated with hardware engineers to optimize system performance and reliability',
-      'Created and maintained software documentation, including design specifications, code documentation, and user manuals',
-      'Participated in code reviews and worked with other developers to ensure software quality and adherence to coding standards',
+      `Developed automated test software using C and Bash Scripts to perform qualification testing on a vehicle management computer / network switch hybrid device`,
+      `Collaborated with hardware engineers to optimize system performance and reliability`,
+      `Created and maintained software documentation, including design specifications, code documentation, and user manuals`,
+      `Participated in code reviews and worked with other developers to ensure software quality and adherence to coding standards`,
     ],
   },
   {
@@ -249,10 +252,10 @@ const experiences = [
     iconBg: '#FFFFFF',
     date: 'July 2020 - July 2021',
     points: [
-      'Managed small scale projects (< $200k) requiring engineering changes to the plant',
-      'Assisted senior project managers with capital project (>$200k), including coordination with internal stakeholder and EPC contractors to ensure project success',
-      'Exposure to industrial operations, complex system processes, and practical failure modes',
-      'Worked with a multidisciplinary team of engineers and technicians to support modifications',
+      `Managed small scale projects (< $200k) requiring engineering changes to the plant`,
+      `Assisted senior project managers with capital project (>$200k), including coordination with internal stakeholder and EPC contractors to ensure project success`,
+      `Exposure to industrial operations, complex system processes, and practical failure modes`,
+      `Worked with a multidisciplinary team of engineers and technicians to support modifications`,
     ],
   },
 ];
@@ -268,9 +271,8 @@ const education = {
 const projects = [
   {
     name: '4 DOF Robot',
-    description:
-      'Built and programmed a 4-DoF robotic arm as a mechatronic project,\
-       capable of precise and coordinated movements for various applications.',
+    description: `Built and programmed a 4-DoF robotic arm as a mechatronic project, 
+      capable of precise and coordinated movements for various applications.`,
     tags: [
       {
         name: 'arduino',
@@ -295,9 +297,8 @@ const projects = [
   },
   {
     name: 'Velocity Voyage',
-    description:
-      'The endless runner video game, created with Unity, offers players an exciting \
-      and challenging experience as they run and dodge obstacles for as long as possible.',
+    description: `The endless runner video game, created with Unity, offers players an exciting 
+      and challenging experience as they run and dodge obstacles for as long as possible.`,
     tags: [
       {
         name: 'unity',
@@ -314,9 +315,8 @@ const projects = [
   },
   {
     name: 'Tech Trendz',
-    description:
-      'This Web/Mobile application utilizes Stripe API to provide a secure online \
-      shopping experience for users to purchase technology products with confidence.',
+    description: `This Web/Mobile application utilizes Stripe API to provide a secure online 
+      shopping experience for users to purchase technology products with confidence.`,
     tags: [
       {
         name: 'react',
@@ -345,9 +345,9 @@ const projects = [
   },
   {
     name: 'Sociopedia',
-    description:
-      'The full-stack social media app provides users with a comprehensive platform \
-      to connect, communicate, and share content with others in a seamless and engaging manner.',
+    description: `The full-stack social media app provides users with a comprehensive 
+      platform to connect, communicate, and share content with others in a seamless and 
+      engaging manner.`,
     tags: [
       {
         name: 'react',
@@ -440,14 +440,11 @@ const velocityVoyageProject = {
   status: 'Completed',
   category: 'Unity Game',
   src_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
-  description:
-    'This E-commerce project consists of a website built with React, coupled with \
-    a Flutter mobile application, offers a seamless and comprehensive platform for \
-    online shopping. With its user-friendly interface and robust functionality, \
-    customers can browse and purchase products effortlessly, while enjoying a consistent \
-    experience across both web and mobile platforms. The MERN stack ensures \
-    efficient and scalable performance, while the Flutter app provides a responsive \
-    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+  description: `The Endless Runner Unity Game is an exciting and fast-paced gaming 
+  experience where players control a character navigating through a never-ending 
+  obstacle course. With smooth animations, and dynamic gameplay, this game challenges 
+  players to achieve high scores while avoiding obstacles.`,
+  tags: ['Unity', 'Endless Runner', 'C#'],
 };
 
 const techTrendzProject = {
@@ -455,14 +452,12 @@ const techTrendzProject = {
   status: 'Completed',
   category: 'MERN Full Stack + Mobile App',
   src_link: 'https://github.com/kpirabaharan/E-Commerce',
-  description:
-    'This E-commerce project consists of a website built with React, coupled with \
-    a Flutter mobile application, offers a seamless and comprehensive platform for \
-    online shopping. With its user-friendly interface and robust functionality, \
-    customers can browse and purchase products effortlessly, while enjoying a consistent \
-    experience across both web and mobile platforms. The MERN stack ensures \
-    efficient and scalable performance, while the Flutter app provides a responsive \
-    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+  description: `This is an e-commerce store full-stack project consisting of a 
+  web-app built with React.js and a mobile app built with Flutter for both iOS and 
+  Android phones. Both front-end interfaces communicate to a back-end server built 
+  with Node.js and Express.js. This server uses a MongoDB database to store and 
+  retrieve data in schema-less manner.`,
+  tags: ['React.js', 'Flutter', 'Node.js', 'Express.js', 'MongoDB'],
 };
 
 const sociopediaProject = {
@@ -482,6 +477,7 @@ const sociopediaProject = {
 
 export {
   about,
+  opportunity,
   typedHero,
   services,
   frontEndDev,

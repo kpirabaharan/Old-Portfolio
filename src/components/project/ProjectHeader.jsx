@@ -7,12 +7,12 @@ const ProjectHeader = ({ name, status, category, src_link, description }) => {
   return (
     <>
       <p className={styles.heroHeadText}>{name}</p>
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row'>
         <div>
           <p className={`${styles.projectSubText}`}>Status - {status}</p>
           <p className={`${styles.projectSubText}`}>Category: {category}</p>
         </div>
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center pl-8'>
           <div
             onClick={() => {
               window.open(src_link, '_blank');

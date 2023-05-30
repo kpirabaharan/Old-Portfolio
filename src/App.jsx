@@ -15,15 +15,14 @@ import { c } from './assets';
 const App = () => {
   const [loading, setLoading] = useState(false);
 
-  // This will run one time after the component mounts
   useEffect(() => {
+    console.log('Loading');
     setLoading(true);
-    // callback function to call when event triggers
     const onPageLoad = () => {
+      console.log('Done Loading');
       setLoading(false);
     };
 
-    // Check if the page has already loaded
     if (document.readyState === 'complete') {
       onPageLoad();
     } else {
@@ -31,9 +30,12 @@ const App = () => {
         setLoading(false);
       }, 3000);
       const bgelement = document.getElementById('background-wallpaper');
-      if (bgelement) bgelement.addEventListener('load', onPageLoad, false);
-      else return setLoading(false);
-      // Remove the event listener when component unmounts
+      if (bgelement) {
+        bgelement.addEventListener('load', onPageLoad, false);
+      } else {
+        console.log('Else');
+        return setLoading(false);
+      }
       return () => bgelement.removeEventListener('load', onPageLoad);
     }
   }, []);

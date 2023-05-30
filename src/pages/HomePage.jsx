@@ -21,7 +21,6 @@ const HomePage = () => {
   const [homePageHeight, setHomePageHeight] = useState(0);
   useEffect(() => {
     setHomePageHeight(document.getElementById('homepage-div').clientHeight);
-    console.log(homePageHeight);
   }, [homePageHeight]);
 
   return (

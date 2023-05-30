@@ -22,7 +22,7 @@ const ProjectCard = ({
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         tiltReverse={true}
-        className='bg-gradient-to-r teal-comp-gradient p-[1px] rounded-2xl sm:w-[360px] w-full h-[350px]'
+        className='rounded-2xl sm:w-[360px] w-full h-[350px]'
       >
         <div className='flex w-full h-full bg-dark-teal rounded-2xl'>
           <div
@@ -34,7 +34,7 @@ const ProjectCard = ({
             <p className='mt-7 px-8'>{description}</p>
           </div>
           <img
-            className='h-full w-full object-cover rounded-[1.5rem] p-4'
+            className='h-full w-full object-cover rounded-[1.75rem] p-[20px]'
             src={image}
             alt={name}
           />

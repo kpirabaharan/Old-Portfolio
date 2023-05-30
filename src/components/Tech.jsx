@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils';
+
 import {
   frontEndDev,
   backEndDev,
