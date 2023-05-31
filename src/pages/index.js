@@ -5,6 +5,7 @@ import RobotPage from './RobotPage';
 import VelocityVoyagePage from './VelocityVoyagePage';
 import TechTrendzPage from './TechTrendzPage';
 import SociopediaPage from './SociopediaPage';
+import PathFollowingRobotPage from './PathFollowingRobotPage';
 
 export {
   SplashPage,
@@ -12,6 +13,7 @@ export {
   RootLayout,
   RobotPage,
   VelocityVoyagePage,
-  SociopediaPage,
   TechTrendzPage,
+  SociopediaPage,
+  PathFollowingRobotPage,
 };

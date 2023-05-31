@@ -494,6 +494,21 @@ const sociopediaProject = {
     and intuitive mobile experience, enhancing accessibility for customers on the go.',
 };
 
+const pathFollowingRobotProject = {
+  name: 'Path Following Robot',
+  status: 'Complete',
+  category: 'Mechatronics System',
+  src_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
+  description:
+    'This E-commerce project consists of a website built with React, coupled with \
+    a Flutter mobile application, offers a seamless and comprehensive platform for \
+    online shopping. With its user-friendly interface and robust functionality, \
+    customers can browse and purchase products effortlessly, while enjoying a consistent \
+    experience across both web and mobile platforms. The MERN stack ensures \
+    efficient and scalable performance, while the Flutter app provides a responsive \
+    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+};
+
 export {
   about,
   opportunity,
@@ -514,4 +529,5 @@ export {
   velocityVoyageProject,
   techTrendzProject,
   sociopediaProject,
+  pathFollowingRobotProject,
 };

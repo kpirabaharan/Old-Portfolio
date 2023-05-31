@@ -9,8 +9,8 @@ import {
   VelocityVoyagePage,
   TechTrendzPage,
   SociopediaPage,
+  PathFollowingRobotPage,
 } from './pages';
-import { c } from './assets';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -67,6 +67,10 @@ const App = () => {
             {
               path: 'sociopedia',
               element: <SociopediaPage />,
+            },
+            {
+              path: 'path-following-robot',
+              element: <PathFollowingRobotPage />,
             },
           ],
         },
