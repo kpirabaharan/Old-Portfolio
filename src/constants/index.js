@@ -35,7 +35,8 @@ import {
   ecommerce,
   velocityvoyage,
   sociopedia,
-  robot,
+  fourDoFRobot,
+  pathFollowingRobot,
   location,
   mail,
   linkedin,
@@ -291,7 +292,7 @@ const projects = [
         color: 'orange-text-gradient',
       },
     ],
-    image: robot,
+    image: fourDoFRobot,
     source_code_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
     webpage_link: '/projects/robot',
   },
@@ -373,6 +374,24 @@ const projects = [
     image: sociopedia,
     source_code_link: 'https://github.com/kpirabaharan/Social-Media-App',
     webpage_link: '/projects/sociopedia',
+  },
+  {
+    name: 'Path Following Robot',
+    description: `Autonomous line-following robot project designed to deliver 
+    objects to a specific destination by accurately following a predefined path.`,
+    tags: [
+      {
+        name: 'arduino',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mechatronics',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: pathFollowingRobot,
+    source_code_link: 'https://github.com/kpirabaharan/Robotics',
+    webpage_link: '/projects/path-following-robot',
   },
 ];
 
