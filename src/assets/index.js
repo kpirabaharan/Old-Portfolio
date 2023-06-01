@@ -55,6 +55,7 @@ import sociopedia from './projects/sociopedia.png';
 import ecommerce from './projects/ecommerce.png';
 import velocityvoyage from './projects/velocityvoyage.png';
 import fourDoFRobot from './projects/robot.jpg';
+import partCollectingRobot from './projects/part_collecting_robot.png';
 import pathFollowingRobot from './projects/path_following_robot.jpg';
 
 import mail from './mail.svg';
@@ -108,6 +109,7 @@ export {
   ecommerce,
   velocityvoyage,
   fourDoFRobot,
+  partCollectingRobot,
   pathFollowingRobot,
   mail,
   location,

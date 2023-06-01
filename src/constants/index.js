@@ -36,6 +36,7 @@ import {
   velocityvoyage,
   sociopedia,
   fourDoFRobot,
+  partCollectingRobot,
   pathFollowingRobot,
   location,
   mail,
@@ -376,6 +377,23 @@ const projects = [
     webpage_link: '/projects/sociopedia',
   },
   {
+    name: 'Part Collecting Robot',
+    description: `Autonomous part collecting robot navigating dynamic environments, 
+    avoiding obstacles, and efficiently collecting objects for streamlined operations.`,
+    tags: [
+      {
+        name: 'arduino',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mechatronics',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: partCollectingRobot,
+    webpage_link: '/projects/path-following-robot',
+  },
+  {
     name: 'Path Following Robot',
     description: `Autonomous line-following robot project designed to deliver 
     objects to a specific destination by accurately following a predefined path.`,
@@ -390,7 +408,6 @@ const projects = [
       },
     ],
     image: pathFollowingRobot,
-    source_code_link: 'https://github.com/kpirabaharan/Robotics',
     webpage_link: '/projects/path-following-robot',
   },
 ];

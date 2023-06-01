@@ -40,19 +40,23 @@ const ProjectCard = ({
           />
           <div className='absolute inset-0 flex justify-end m-6'>
             <div className='flex flex-col justify-between'>
-              <div
-                onClick={() => {
-                  window.open(source_code_link, '_blank');
-                }}
-                className='black-gradient w-10 h-10 rounded-full flex justify-center 
+              {source_code_link ? (
+                <div
+                  onClick={() => {
+                    window.open(source_code_link, '_blank');
+                  }}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center 
                 items-center cursor-pointer'
-              >
-                <img
-                  src={github}
-                  alt='github'
-                  className='w-1/2 h-1/2 object-contain z-20'
-                />
-              </div>
+                >
+                  <img
+                    src={github}
+                    alt='github'
+                    className='w-1/2 h-1/2 object-contain z-20'
+                  />
+                </div>
+              ) : (
+                <div></div>
+              )}
               <Link to={webpage_link}>
                 <div
                   className='black-gradient w-10 h-10 rounded-full flex justify-center 
