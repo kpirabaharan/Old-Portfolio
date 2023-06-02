@@ -16,7 +16,7 @@ const Navbar = ({ isHomePage = true }) => {
     >
       {!isHomePage ? (
         <Link to={'/'}>
-          <div className='w-10 h-10 mx-4 cursor-pointer sm:hidden'>
+          <div className='w-10 h-10 mx-4 sm:hidden'>
             <img
               className='h-full w-full object-contain'
               src={leftArrow}
@@ -41,7 +41,8 @@ const Navbar = ({ isHomePage = true }) => {
           }}
         >
           <img src={logo} alt='logo' className='h-9 object-contain pr-2' />
-          <p className='text-white-100 hover:text-white-100 text-lg leading-[20px] font-semibold cursor-pointer'>
+
+          <p className='text-white-100 hover:text-white-100 text-lg leading-[20px] font-semibold'>
             Keeshigan <span className='block md:inline'> Pirabaharan</span>
           </p>
         </Link>
@@ -53,7 +54,7 @@ const Navbar = ({ isHomePage = true }) => {
                 className={`
               ${
                 active === link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-lg font-medium cursor-pointer`}
+              } hover:text-white text-lg font-medium `}
                 onClick={() => setActive(link.title)}
               >
                 <HashLink to={`#${link.id}`}>{link.title}</HashLink>
@@ -61,7 +62,7 @@ const Navbar = ({ isHomePage = true }) => {
             ))}
             <li
               className={`outline outline-offset-0 outline-2 rounded-lg text-secondary 
-            hover:text-white p-2 text-lg font-medium cursor-pointer`}
+            hover:text-white p-2 text-lg font-medium `}
             >
               <a href='./resume.pdf' download target='_blank'>
                 Resume
@@ -76,7 +77,7 @@ const Navbar = ({ isHomePage = true }) => {
             <img
               src={toggle ? close : menu}
               alt='menu'
-              className='w-[28px] h-[28px] object-contain cursor-pointer'
+              className='w-[28px] h-[28px] object-contain '
               onClick={() => setToggle(!toggle)}
             />
             <div
@@ -92,7 +93,7 @@ const Navbar = ({ isHomePage = true }) => {
                     className={`
               ${
                 active === link.title ? 'text-white' : 'text-secondary'
-              } font-poppins cursor-pointer`}
+              } font-poppins `}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(link.title);

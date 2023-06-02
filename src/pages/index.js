@@ -5,6 +5,7 @@ import RobotPage from './RobotPage';
 import VelocityVoyagePage from './VelocityVoyagePage';
 import TechTrendzPage from './TechTrendzPage';
 import SociopediaPage from './SociopediaPage';
+import PartCollectingRobotPage from './PartCollectingRobotPage';
 import PathFollowingRobotPage from './PathFollowingRobotPage';
 
 export {
@@ -15,5 +16,6 @@ export {
   VelocityVoyagePage,
   TechTrendzPage,
   SociopediaPage,
+  PartCollectingRobotPage,
   PathFollowingRobotPage,
 };

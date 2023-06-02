@@ -18,7 +18,7 @@ const ProjectHeader = ({ name, status, category, src_link, description }) => {
               window.open(src_link, '_blank');
             }}
             className='bg-gray-800 w-10 h-10 rounded-full flex justify-center 
-                items-center cursor-pointer'
+                items-center'
           >
             <img
               src={github}

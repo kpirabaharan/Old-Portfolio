@@ -53,7 +53,7 @@ const Hero = () => {
       </div>
       <div
         className='absolute bottom-8 sm:-bottom-6 w-full flex justify-center 
-          items-center cursor-pointer z-10'
+          items-center z-10'
       >
         <HashLink to={'#about'}>
           <div

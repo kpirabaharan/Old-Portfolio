@@ -8,6 +8,7 @@ import { styles } from '../styles';
 import { github, rightArrow } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils';
+import { a } from 'maath/dist/objectSpread2-284232a6.esm';
 
 const ProjectCard = ({
   index,
@@ -21,7 +22,7 @@ const ProjectCard = ({
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        tiltReverse={true}
+        tiltReverse={false}
         className='rounded-2xl sm:w-[360px] w-full h-[350px]'
       >
         <div className='flex w-full h-full bg-dark-teal rounded-2xl'>
@@ -41,33 +42,37 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-end m-6'>
             <div className='flex flex-col justify-between'>
               {source_code_link ? (
-                <div
-                  onClick={() => {
-                    window.open(source_code_link, '_blank');
-                  }}
-                  className='black-gradient w-10 h-10 rounded-full flex justify-center 
-                items-center cursor-pointer'
-                >
-                  <img
-                    src={github}
-                    alt='github'
-                    className='w-1/2 h-1/2 object-contain z-20'
-                  />
-                </div>
+                <a>
+                  <div
+                    onClick={() => {
+                      window.open(source_code_link, '_blank');
+                    }}
+                    className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                    items-center'
+                  >
+                    <img
+                      src={github}
+                      alt='github'
+                      className='w-1/2 h-1/2 object-contain z-20'
+                    />
+                  </div>
+                </a>
               ) : (
                 <div></div>
               )}
               <Link to={webpage_link}>
-                <div
-                  className='black-gradient w-10 h-10 rounded-full flex justify-center 
-                items-center cursor-pointer'
-                >
-                  <img
-                    src={rightArrow}
-                    alt='project'
-                    className='w-1/2 h-1/2 object-contain z-20'
-                  />
-                </div>
+                <a>
+                  <div
+                    className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                items-center'
+                  >
+                    <img
+                      src={rightArrow}
+                      alt='project'
+                      className='w-1/2 h-1/2 object-contain z-20'
+                    />
+                  </div>
+                </a>
               </Link>
             </div>
           </div>

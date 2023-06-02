@@ -23,7 +23,7 @@ const RootLayout = () => {
     <div className='absolute h-full w-full bg-[#050505]'>
       <Navbar isHomePage={false} />
       <HashLink to={'/#projects'}>
-        <div className='hidden sm:block fixed top-[130px] left-8 w-10 h-10 z-20 cursor-pointer'>
+        <div className='hidden sm:block fixed top-[130px] left-8 w-10 h-10 z-20'>
           <img src={leftArrow} alt='' />
         </div>
       </HashLink>
