@@ -391,6 +391,8 @@ const projects = [
       },
     ],
     image: partCollectingRobot,
+    source_code_link:
+      'https://github.com/kpirabaharan/Autonomous-Part-Collecting-Robot',
     webpage_link: '/projects/part-collecting-robot',
   },
   {
