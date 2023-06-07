@@ -101,7 +101,7 @@ const Projects = () => {
           scalable, and user-friendly software solutions.
         </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 justify-center sm:justify-start flex flex-wrap gap-7'>
         {projects.map((proj, ind) => (
           <ProjectCard key={`project-${ind}`} index={ind} {...proj} />
         ))}
