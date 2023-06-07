@@ -23,6 +23,7 @@ import css from './tech/css.png';
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
 import reactjs from './tech/reactjs.png';
+import nextjs from './tech/nextjs.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 
@@ -84,6 +85,7 @@ export {
   javascript,
   typescript,
   reactjs,
+  nextjs,
   redux,
   tailwind,
   nodejs,

@@ -5,6 +5,7 @@ import {
   html,
   css,
   reactjs,
+  nextjs,
   redux,
   tailwind,
   phone,
@@ -122,6 +123,10 @@ const frontEndDev = [
   {
     name: 'ReactJS',
     icon: reactjs,
+  },
+  {
+    name: 'NextJS',
+    icon: nextjs,
   },
   {
     name: 'Redux Toolkit',
