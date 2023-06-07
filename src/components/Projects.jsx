@@ -40,7 +40,7 @@ const ProjectCard = ({
             alt={name}
           />
           <div className='absolute inset-0 flex justify-end m-6'>
-            <div className='flex flex-col justify-between'>
+            <div className='flex flex-col justify-between cursor-pointer'>
               {source_code_link ? (
                 <a>
                   <div
@@ -60,7 +60,7 @@ const ProjectCard = ({
               ) : (
                 <div></div>
               )}
-              <Link to={webpage_link}>
+              {/* <Link to={webpage_link}>
                 <a>
                   <div
                     className='black-gradient w-10 h-10 rounded-full flex justify-center 
@@ -73,7 +73,7 @@ const ProjectCard = ({
                     />
                   </div>
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
