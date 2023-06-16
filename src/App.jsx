@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { RouterProvider, createHashRouter } from 'react-router-dom';
-import AnimatedCursor from 'react-animated-cursor';
 
 import {
   SplashPage,
@@ -86,28 +85,6 @@ const App = () => {
 
   return (
     <div className='app'>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={8}
-        color='68, 139, 156'
-        outerAlpha={0.35}
-        innerScale={0.7}
-        outerScale={5}
-        clickables={[
-          'a',
-          'Link',
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link',
-        ]}
-      />
       {loading ? <SplashPage /> : <RouterProvider router={router} />}
     </div>
   );

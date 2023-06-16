@@ -65,7 +65,7 @@ export const navLinks = [
   },
 ];
 
-const about = `I'm a Keeshigan Pirabaharan, a 24-year-old Mechatronics/Software 
+const about = `I'm Keeshigan Pirabaharan, a 24-year-old Mechatronics/Software 
 engineer with experience in creating innovative solutions that seamlessly integrate 
 both Frontend and Backend technologies.  I'm a quick learner with the willingness to 
 learn new technologies to create efficient and scalable solutions that solve real-world 
@@ -468,14 +468,13 @@ const robotProject = {
   status: 'Ongoing',
   category: 'Mechatronics System',
   src_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
-  description:
-    'This E-commerce project consists of a website built with React, coupled with \
-    a Flutter mobile application, offers a seamless and comprehensive platform for \
-    online shopping. With its user-friendly interface and robust functionality, \
-    customers can browse and purchase products effortlessly, while enjoying a consistent \
-    experience across both web and mobile platforms. The MERN stack ensures \
-    efficient and scalable performance, while the Flutter app provides a responsive \
-    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+  description: `This project aims to create a 4-DOF robot using 3D printed materials, 
+  stepper motors, and Arduino-Raspberry Pi control. By implementing forward and 
+  inverse kinematics, the robot will achieve precise movement and positioning. 
+  The 3D printed structure provides flexibility, while Arduino and Raspberry Pi 
+  handle control and higher-level tasks. The result will be a functional and 
+  programmable robot, showcasing the integration of mechanical design, 3D printing,
+  kinematics algorithms, and microcontroller programming.`,
 };
 
 const velocityVoyageProject = {
@@ -508,14 +507,7 @@ const sociopediaProject = {
   status: 'Completed',
   category: 'MERN Full Stack + Mobile App',
   src_link: 'https://github.com/kpirabaharan/Social-Media-App',
-  description:
-    'This E-commerce project consists of a website built with React, coupled with \
-    a Flutter mobile application, offers a seamless and comprehensive platform for \
-    online shopping. With its user-friendly interface and robust functionality, \
-    customers can browse and purchase products effortlessly, while enjoying a consistent \
-    experience across both web and mobile platforms. The MERN stack ensures \
-    efficient and scalable performance, while the Flutter app provides a responsive \
-    and intuitive mobile experience, enhancing accessibility for customers on the go.',
+  description: ``,
 };
 
 const partCollectingRobotProject = {

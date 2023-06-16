@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "host": "vite --host"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -15,7 +16,6 @@
     "framer-motion": "^10.8.5",
     "maath": "^0.5.3",
     "react": "^18.2.0",
-    "react-animated-cursor": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.118",
     "react-router-dom": "^6.9.0",

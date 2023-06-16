@@ -20,15 +20,15 @@ const RootLayout = () => {
   }, [rootLayoutHeight]);
 
   return (
-    <div className='absolute h-full w-full bg-[#050505]'>
+    <div className='absolute h-screen w-full bg-[#050505]'>
       <Navbar isHomePage={false} />
       <HashLink to={'/#projects'}>
         <div className='hidden sm:block fixed top-[130px] left-8 w-10 h-10 z-20'>
           <img src={leftArrow} alt='' />
         </div>
       </HashLink>
-      <main className={`absolute top-[100px] w-full ${styles.paddingX}`}>
-        <div id='rootLayout-div' className='relative z-0'>
+      <main className={`pt-[80px] w-full h-full ${styles.paddingX}`}>
+        <div id='rootLayout-div' className='relative z-0 min-h-full'>
           <Outlet />
           {gl ? <StarsCanvas height={rootLayoutHeight} /> : <></>}
         </div>

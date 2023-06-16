@@ -6,7 +6,7 @@ import { github } from '../../assets';
 const ProjectHeader = ({ name, status, category, src_link, description }) => {
   return (
     <>
-      <p className={styles.heroHeadText}>{name}</p>
+      <p className={`${styles.heroHeadText} ml-[-10px]`}>{name}</p>
       <div className='flex flex-row'>
         <div>
           <p className={`${styles.projectSubText}`}>Status - {status}</p>
@@ -28,7 +28,7 @@ const ProjectHeader = ({ name, status, category, src_link, description }) => {
           </div>
         </div>
       </div>
-      <div className='w-[90%] mt-4 border-b-2 border-secondary'></div>
+      <div className='w-[100%] mt-4 border-b-2 border-secondary'></div>
       <p className={`${styles.projectDescriptionText} mt-2`}>{description}</p>
     </>
   );
