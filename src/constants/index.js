@@ -44,6 +44,10 @@ import {
   linkedin,
   githubsvg,
   docicon,
+  expressjs,
+  postgreSQL,
+  supabase,
+  spotifyClone,
 } from '../assets';
 
 export const navLinks = [
@@ -121,11 +125,11 @@ const frontEndDev = [
     icon: typescript,
   },
   {
-    name: 'ReactJS',
+    name: 'React.js',
     icon: reactjs,
   },
   {
-    name: 'NextJS',
+    name: 'Next.js',
     icon: nextjs,
   },
   {
@@ -140,13 +144,14 @@ const frontEndDev = [
 
 const backEndDev = [
   {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'NodeJS',
+    name: 'Node.js',
     icon: nodejs,
   },
+  {
+    name: 'Express.js',
+    icon: expressjs,
+  },
+
   {
     name: 'MongoDB',
     icon: mongodb,
@@ -154,6 +159,14 @@ const backEndDev = [
   {
     name: 'MySQL',
     icon: mySQL,
+  },
+  {
+    name: 'PostgreSQL',
+    icon: postgreSQL,
+  },
+  {
+    name: 'Supabase',
+    icon: supabase,
   },
 ];
 
@@ -277,27 +290,17 @@ const education = {
 
 const projects = [
   {
+    name: 'Spotify Clone',
+    description: `Full-stack Spotify clone built with Next.js, replicating the core 
+    features of the popular music streaming platform.`,
+    image: spotifyClone,
+    source_code_link: 'https://github.com/kpirabaharan/Spotify-Clone',
+    webpage_link: '/projects/spotify',
+  },
+  {
     name: '4 DOF Robot',
     description: `Built and programmed a 4-DoF robotic arm as a mechatronic project, 
       capable of precise and coordinated movements for various applications.`,
-    tags: [
-      {
-        name: 'arduino',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'raspberry pi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mechatronics',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: '3d printed',
-        color: 'orange-text-gradient',
-      },
-    ],
     image: fourDoFRobot,
     source_code_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
     webpage_link: '/projects/robot',
@@ -306,16 +309,6 @@ const projects = [
     name: 'Velocity Voyage',
     description: `The endless runner video game, created with Unity, offers players an exciting 
       and challenging experience as they run and dodge obstacles for as long as possible.`,
-    tags: [
-      {
-        name: 'unity',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'csharp',
-        color: 'green-text-gradient',
-      },
-    ],
     image: velocityvoyage,
     source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
     webpage_link: '/projects/velocityvoyage',
@@ -324,28 +317,6 @@ const projects = [
     name: 'Tech Trendz',
     description: `This Web/Mobile application utilizes Stripe API to provide a secure online 
       shopping experience for users to purchase technology products with confidence.`,
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'nodejs',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'flutter',
-        color: 'blue-text-gradient',
-      },
-    ],
     image: ecommerce,
     source_code_link: 'https://github.com/kpirabaharan/E-Commerce',
     webpage_link: '/projects/techtrendz',
@@ -355,28 +326,6 @@ const projects = [
     description: `The full-stack social media app provides users with a comprehensive 
       platform to connect, communicate, and share content with others in a seamless and 
       engaging manner.`,
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'material-ui',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'nodejs',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'flutter',
-        color: 'blue-text-gradient',
-      },
-    ],
     image: sociopedia,
     source_code_link: 'https://github.com/kpirabaharan/Social-Media-App',
     webpage_link: '/projects/sociopedia',
@@ -385,16 +334,6 @@ const projects = [
     name: 'Part Collecting Robot',
     description: `Autonomous part collecting robot navigating dynamic environments, 
     avoiding obstacles, and efficiently collecting objects for streamlined operations.`,
-    tags: [
-      {
-        name: 'arduino',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mechatronics',
-        color: 'pink-text-gradient',
-      },
-    ],
     image: partCollectingRobot,
     source_code_link:
       'https://github.com/kpirabaharan/Autonomous-Part-Collecting-Robot',
@@ -404,16 +343,6 @@ const projects = [
     name: 'Path Following Robot',
     description: `Autonomous line-following robot project designed to deliver 
     objects to a specific destination by accurately following a predefined path.`,
-    tags: [
-      {
-        name: 'arduino',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mechatronics',
-        color: 'pink-text-gradient',
-      },
-    ],
     image: pathFollowingRobot,
     webpage_link: '/projects/path-following-robot',
   },
@@ -462,6 +391,14 @@ const contactInfo = [
     link: false,
   },
 ];
+
+const spotifyProject = {
+  name: 'Spotify Clone',
+  status: 'Ongoing',
+  category: 'Full Stack Clone',
+  src_link: 'https://github.com/kpirabaharan/Spotify-Clone',
+  description: ``,
+};
 
 const robotProject = {
   name: '4 DoF Robot',
@@ -556,6 +493,7 @@ export {
   education,
   projects,
   contactInfo,
+  spotifyProject,
   robotProject,
   velocityVoyageProject,
   techTrendzProject,

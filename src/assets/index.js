@@ -28,8 +28,11 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 
 import nodejs from './tech/nodejs.png';
+import expressjs from './tech/expressjs.png';
 import mongodb from './tech/mongodb.png';
 import mySQL from './tech/MySQL.png';
+import postgreSQL from './tech/postgreSQL.png';
+import supabase from './tech/supabase.png';
 
 import dart from './tech/dart.png';
 import flutter from './tech/flutter.png';
@@ -52,6 +55,7 @@ import aws from './tech/aws.png';
 import docker from './tech/docker.png';
 import git from './tech/git.png';
 
+import spotifyClone from './projects/spotify-clone.png';
 import sociopedia from './projects/sociopedia.png';
 import ecommerce from './projects/ecommerce.png';
 import velocityvoyage from './projects/velocityvoyage.png';
@@ -89,8 +93,11 @@ export {
   redux,
   tailwind,
   nodejs,
+  expressjs,
   mongodb,
   mySQL,
+  postgreSQL,
+  supabase,
   dart,
   flutter,
   kotlin,
@@ -107,6 +114,7 @@ export {
   aws,
   docker,
   git,
+  spotifyClone,
   sociopedia,
   ecommerce,
   velocityvoyage,
