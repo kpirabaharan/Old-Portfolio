@@ -10,7 +10,6 @@ import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 import leftArrow from './left-arrow.svg';
-import rightArrow from './right-arrow.svg';
 import down from './down.svg';
 
 import opg from './company/opg.png';
@@ -79,7 +78,6 @@ export {
   menu,
   close,
   leftArrow,
-  rightArrow,
   down,
   opg,
   cw,

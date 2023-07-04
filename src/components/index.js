@@ -1,5 +1,4 @@
 import { ComputersCanvas, StarsCanvas } from './canvas';
-import { ProjectHeader } from './project';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
@@ -12,7 +11,6 @@ import Contact from './Contact';
 export {
   ComputersCanvas,
   StarsCanvas,
-  ProjectHeader,
   Navbar,
   Hero,
   About,

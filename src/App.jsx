@@ -1,18 +1,7 @@
 import { useState, useEffect } from 'react';
 import { RouterProvider, createHashRouter } from 'react-router-dom';
 
-import {
-  SplashPage,
-  HomePage,
-  RootLayout,
-  SpotifyClonePage,
-  RobotPage,
-  VelocityVoyagePage,
-  TechTrendzPage,
-  SociopediaPage,
-  PartCollectingRobotPage,
-  PathFollowingRobotPage,
-} from './pages';
+import { SplashPage, HomePage } from './pages';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -49,40 +38,6 @@ const App = () => {
         {
           index: true,
           element: <HomePage />,
-        },
-        {
-          path: 'projects/',
-          element: <RootLayout />,
-          children: [
-            {
-              path: 'spotify-clone',
-              element: <SpotifyClonePage />,
-            },
-            {
-              path: 'robot',
-              element: <RobotPage />,
-            },
-            {
-              path: 'velocity-voyage',
-              element: <VelocityVoyagePage />,
-            },
-            {
-              path: 'tech-trendz',
-              element: <TechTrendzPage />,
-            },
-            {
-              path: 'sociopedia',
-              element: <SociopediaPage />,
-            },
-            {
-              path: 'part-collecting-robot',
-              element: <PartCollectingRobotPage />,
-            },
-            {
-              path: 'path-following-robot',
-              element: <PathFollowingRobotPage />,
-            },
-          ],
         },
       ],
     },

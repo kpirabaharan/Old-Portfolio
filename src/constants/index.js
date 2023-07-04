@@ -296,7 +296,6 @@ const projects = [
     image: spotifyClone,
     source_code_link: 'https://github.com/kpirabaharan/Spotify-Clone',
     website_link: 'https://spotify-clone-kpirabaharan.vercel.app/',
-    webpage_link: '/projects/spotify-clone',
   },
   {
     name: '4 DOF Robot',
@@ -304,7 +303,6 @@ const projects = [
       capable of precise and coordinated movements for various applications.`,
     image: fourDoFRobot,
     source_code_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
-    webpage_link: '/projects/robot',
   },
   {
     name: 'Velocity Voyage',
@@ -312,7 +310,6 @@ const projects = [
       and challenging experience as they run and dodge obstacles for as long as possible.`,
     image: velocityvoyage,
     source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
-    webpage_link: '/projects/velocity-voyage',
   },
   {
     name: 'Tech Trendz',
@@ -320,7 +317,6 @@ const projects = [
       shopping experience for users to purchase technology products with confidence.`,
     image: ecommerce,
     source_code_link: 'https://github.com/kpirabaharan/E-Commerce',
-    webpage_link: '/projects/tech-trendz',
   },
   {
     name: 'Sociopedia',
@@ -329,7 +325,6 @@ const projects = [
       engaging manner.`,
     image: sociopedia,
     source_code_link: 'https://github.com/kpirabaharan/Social-Media-App',
-    webpage_link: '/projects/sociopedia',
   },
   {
     name: 'Part Collecting Robot',
@@ -338,14 +333,12 @@ const projects = [
     image: partCollectingRobot,
     source_code_link:
       'https://github.com/kpirabaharan/Autonomous-Part-Collecting-Robot',
-    webpage_link: '/projects/part-collecting-robot',
   },
   {
     name: 'Path Following Robot',
     description: `Autonomous line-following robot project designed to deliver 
     objects to a specific destination by accurately following a predefined path.`,
     image: pathFollowingRobot,
-    webpage_link: '/projects/path-following-robot',
   },
 ];
 
@@ -393,92 +386,6 @@ const contactInfo = [
   },
 ];
 
-const spotifyProject = {
-  name: 'Spotify Clone',
-  status: 'Completed',
-  date: 'May 2023 - June 2023',
-  category: 'Full Stack Clone',
-  src_link: 'https://github.com/kpirabaharan/Spotify-Clone',
-  description: ``,
-};
-
-const robotProject = {
-  name: '4 DoF Robot',
-  status: 'Ongoing',
-  category: 'Mechatronics System',
-  src_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
-  description: `This project aims to create a 4-DOF robot using 3D printed materials, 
-  stepper motors, and Arduino-Raspberry Pi control. By implementing forward and 
-  inverse kinematics, the robot will achieve precise movement and positioning. 
-  The 3D printed structure provides flexibility, while Arduino and Raspberry Pi 
-  handle control and higher-level tasks. The result will be a functional and 
-  programmable robot, showcasing the integration of mechanical design, 3D printing,
-  kinematics algorithms, and microcontroller programming.`,
-};
-
-const velocityVoyageProject = {
-  name: 'Velocity Voyage',
-  status: 'Completed',
-  category: 'Unity Game',
-  src_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
-  description: `The Endless Runner Unity Game is an exciting and fast-paced gaming 
-  experience where players control a character navigating through a never-ending 
-  obstacle course. With smooth animations, and dynamic gameplay, this game challenges 
-  players to achieve high scores while avoiding obstacles.`,
-  tags: ['Unity', 'Endless Runner', 'C#'],
-};
-
-const techTrendzProject = {
-  name: 'Tech Trendz',
-  status: 'Completed',
-  category: 'MERN Full Stack + Mobile App',
-  src_link: 'https://github.com/kpirabaharan/E-Commerce',
-  description: `This is an e-commerce store full-stack project consisting of a 
-  web-app built with React.js and a mobile app built with Flutter for both iOS and 
-  Android phones. Both front-end interfaces communicate to a back-end server built 
-  with Node.js and Express.js. This server uses a MongoDB database to store and 
-  retrieve data in schema-less manner.`,
-  tags: ['React.js', 'Flutter', 'Node.js', 'Express.js', 'MongoDB'],
-};
-
-const sociopediaProject = {
-  name: 'Sociopedia',
-  status: 'Completed',
-  category: 'MERN Full Stack + Mobile App',
-  src_link: 'https://github.com/kpirabaharan/Social-Media-App',
-  description: ``,
-};
-
-const partCollectingRobotProject = {
-  name: 'Part Collecting Robot',
-  status: 'Partial Completion',
-  category: 'Mechatronics System',
-  src_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
-  description:
-    'This E-commerce project consists of a website built with React, coupled with \
-    a Flutter mobile application, offers a seamless and comprehensive platform for \
-    online shopping. With its user-friendly interface and robust functionality, \
-    customers can browse and purchase products effortlessly, while enjoying a consistent \
-    experience across both web and mobile platforms. The MERN stack ensures \
-    efficient and scalable performance, while the Flutter app provides a responsive \
-    and intuitive mobile experience, enhancing accessibility for customers on the go.',
-};
-
-const pathFollowingRobotProject = {
-  name: 'Path Following Robot',
-  status: 'Complete',
-  category: 'Mechatronics System',
-  src_link: 'https://github.com/kpirabaharan/Four-DOF-Robot',
-  description:
-    'This E-commerce project consists of a website built with React, coupled with \
-    a Flutter mobile application, offers a seamless and comprehensive platform for \
-    online shopping. With its user-friendly interface and robust functionality, \
-    customers can browse and purchase products effortlessly, while enjoying a consistent \
-    experience across both web and mobile platforms. The MERN stack ensures \
-    efficient and scalable performance, while the Flutter app provides a responsive \
-    and intuitive mobile experience, enhancing accessibility for customers on the go.',
-};
-
 export {
   about,
   opportunity,
@@ -495,11 +402,4 @@ export {
   education,
   projects,
   contactInfo,
-  spotifyProject,
-  robotProject,
-  velocityVoyageProject,
-  techTrendzProject,
-  sociopediaProject,
-  partCollectingRobotProject,
-  pathFollowingRobotProject,
 };

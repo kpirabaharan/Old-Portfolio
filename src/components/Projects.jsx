@@ -1,10 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github, rightArrow, web } from '../assets';
+import { github, web } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils';
 
@@ -15,7 +13,6 @@ const ProjectCard = ({
   image,
   source_code_link,
   website_link,
-  webpage_link,
 }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
