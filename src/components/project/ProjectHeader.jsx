@@ -3,13 +3,22 @@ import React from 'react';
 import { styles } from '../../styles';
 import { github } from '../../assets';
 
-const ProjectHeader = ({ name, status, category, src_link, description }) => {
+const ProjectHeader = ({
+  name,
+  status,
+  date,
+  category,
+  src_link,
+  description,
+}) => {
   return (
     <>
-      <p className={`${styles.heroHeadText} ml-[-10px]`}>{name}</p>
+      <p className={`${styles.projectHeadText} ml-[-10px]`}>{name}</p>
       <div className='flex flex-row'>
         <div>
-          <p className={`${styles.projectSubText}`}>Status - {status}</p>
+          <p className={`${styles.projectSubText}`}>
+            {status}: {date}
+          </p>
           <p className={`${styles.projectSubText}`}>Category: {category}</p>
         </div>
         <div className='flex flex-col justify-center pl-8'>

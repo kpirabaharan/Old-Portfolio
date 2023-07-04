@@ -295,7 +295,8 @@ const projects = [
     features of the popular music streaming platform.`,
     image: spotifyClone,
     source_code_link: 'https://github.com/kpirabaharan/Spotify-Clone',
-    webpage_link: '/projects/spotify',
+    website_link: 'https://spotify-clone-kpirabaharan.vercel.app/',
+    webpage_link: '/projects/spotify-clone',
   },
   {
     name: '4 DOF Robot',
@@ -311,7 +312,7 @@ const projects = [
       and challenging experience as they run and dodge obstacles for as long as possible.`,
     image: velocityvoyage,
     source_code_link: 'https://github.com/kpirabaharan/Velocity-Voyage',
-    webpage_link: '/projects/velocityvoyage',
+    webpage_link: '/projects/velocity-voyage',
   },
   {
     name: 'Tech Trendz',
@@ -319,7 +320,7 @@ const projects = [
       shopping experience for users to purchase technology products with confidence.`,
     image: ecommerce,
     source_code_link: 'https://github.com/kpirabaharan/E-Commerce',
-    webpage_link: '/projects/techtrendz',
+    webpage_link: '/projects/tech-trendz',
   },
   {
     name: 'Sociopedia',
@@ -394,7 +395,8 @@ const contactInfo = [
 
 const spotifyProject = {
   name: 'Spotify Clone',
-  status: 'Ongoing',
+  status: 'Completed',
+  date: 'May 2023 - June 2023',
   category: 'Full Stack Clone',
   src_link: 'https://github.com/kpirabaharan/Spotify-Clone',
   description: ``,

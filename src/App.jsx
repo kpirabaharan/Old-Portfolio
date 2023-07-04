@@ -5,6 +5,7 @@ import {
   SplashPage,
   HomePage,
   RootLayout,
+  SpotifyClonePage,
   RobotPage,
   VelocityVoyagePage,
   TechTrendzPage,
@@ -54,15 +55,19 @@ const App = () => {
           element: <RootLayout />,
           children: [
             {
+              path: 'spotify-clone',
+              element: <SpotifyClonePage />,
+            },
+            {
               path: 'robot',
               element: <RobotPage />,
             },
             {
-              path: 'velocityvoyage',
+              path: 'velocity-voyage',
               element: <VelocityVoyagePage />,
             },
             {
-              path: 'techtrendz',
+              path: 'tech-trendz',
               element: <TechTrendzPage />,
             },
             {
