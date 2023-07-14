@@ -15,7 +15,10 @@ const ProjectCard = ({
   website_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      className='w-full'
+    >
       <div className='relative flex bg-dark-teal rounded-2xl w-full sm:w-[360px] h-[350px]'>
         <div className='absolute inset-0 flex justify-between m-6 z-10'>
           <div>
