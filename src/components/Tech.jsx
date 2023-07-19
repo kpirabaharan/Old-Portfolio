@@ -18,7 +18,7 @@ const TechField = ({ index, field, technology }) => {
   return (
     <div className='w-full h-full pt-8 pb-2'>
       <motion.div
-        variants={fadeIn('right', 'spring', 0.25 + index * 0.25, 0.5)}
+        variants={fadeIn('right', 'spring', 0.1 + index * 0.1, 0.5)}
         className='flex flex-row justify-center sm:justify-start'
       >
         <p className={styles.sectionSubText}>{field}</p>
@@ -27,7 +27,7 @@ const TechField = ({ index, field, technology }) => {
         {technology.map((tech) => {
           return (
             <motion.div
-              variants={fadeIn('right', 'spring', 0.25 + index * 0.25, 0.5)}
+              variants={fadeIn('right', 'spring', 0.1 + index * 0.1, 0.5)}
               className='w-[100px] h-[50px] sm:w-[75px] sm:h-[75px] flex flex-col justify-center 
                 items-center'
               key={`${field}${tech.name}`}

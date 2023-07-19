@@ -48,6 +48,7 @@ import {
   postgreSQL,
   supabase,
   spotifyClone,
+  netflixClone,
 } from '../assets';
 
 export const navLinks = [
@@ -289,6 +290,14 @@ const education = {
 };
 
 const projects = [
+  {
+    name: 'Netflix Clone',
+    description: `Full-stack Netflix clone built with Next.js, replicating the core 
+    features of the popular movie streaming platform.`,
+    image: netflixClone,
+    source_code_link: 'https://github.com/kpirabaharan/Netflix-Clone',
+    website_link: 'https://netflix-clone-kpirabaharan.vercel.app/',
+  },
   {
     name: 'Spotify Clone',
     description: `Full-stack Spotify clone built with Next.js, replicating the core 

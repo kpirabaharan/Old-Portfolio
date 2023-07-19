@@ -54,6 +54,7 @@ import aws from './tech/aws.png';
 import docker from './tech/docker.png';
 import git from './tech/git.png';
 
+import netflixClone from './projects/netflix-clone.png';
 import spotifyClone from './projects/spotify-clone.png';
 import sociopedia from './projects/sociopedia.png';
 import ecommerce from './projects/ecommerce.png';
@@ -112,6 +113,7 @@ export {
   aws,
   docker,
   git,
+  netflixClone,
   spotifyClone,
   sociopedia,
   ecommerce,

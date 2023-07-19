@@ -12,7 +12,7 @@ const InfoCard = ({ index, name, image, value, href, link }) => {
   const isLink = link ? 'underline underline-offset-4' : '';
 
   return (
-    <motion.div variants={fadeIn('up', 'spring', 1 + index * 0.25, 0.5, 0.5)}>
+    <motion.div variants={fadeIn('up', 'spring', 0.5 + index * 0.25, 0.5, 0.5)}>
       <div className='flex flex-row items-center pt-2'>
         <img className='w-[20px] h-[20px]' src={image} alt='sd' />
         <a
@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div className={`flex flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
-        variants={slideIn('up', 'tween', 0.2, 1)}
+        variants={slideIn('up', 'tween', 0.2, 0.5)}
         className='bg-dark-teal p-8 rounded-2xl'
       >
         <h3 className={styles.sectionHeadText}>

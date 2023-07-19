@@ -16,7 +16,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      variants={fadeIn('up', 'spring', index * 0.2, 1)}
       className='relative flex bg-dark-teal rounded-2xl w-full sm:w-[360px] h-[350px]'
     >
       <div className='absolute inset-0 flex justify-between m-6 z-10'>
