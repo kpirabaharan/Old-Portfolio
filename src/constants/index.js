@@ -49,6 +49,7 @@ import {
   supabase,
   spotifyClone,
   netflixClone,
+  smartWindows,
 } from '../assets';
 
 export const navLinks = [
@@ -305,6 +306,15 @@ const projects = [
     image: spotifyClone,
     source_code_link: 'https://github.com/kpirabaharan/Spotify-Clone',
     website_link: 'https://spotify-clone-kpirabaharan.vercel.app/',
+  },
+  {
+    name: 'Smart Windows + Blinders',
+    description: `Collaborated on the Smart Windows Raspberry Pi Project, optimizing 
+    window control through embedded systems, sensors, and an Android app, featuring Manual, 
+    Smart, and Automatic modes, plus geofencing for efficiency.`,
+    image: smartWindows,
+    source_code_link: 'https://github.com/kpirabaharan/Smart-Windows-App',
+    website_link: 'https://www.youtube.com/watch?v=4RYRujc7fvM',
   },
   {
     name: '4 DOF Robot',
