@@ -50,6 +50,8 @@ import {
   spotifyClone,
   netflixClone,
   smartWindows,
+  ecommerceStore,
+  ecommerceAdmin,
 } from '../assets';
 
 export const navLinks = [
@@ -292,12 +294,30 @@ const education = {
 
 const projects = [
   {
+    name: 'E-Commerce Store',
+    description: `Developed a full-fledged e-commerce store website, including an 
+    integrated admin dashboard, using Next.js, Shadcn, Tailwind CSS, and Stripe 
+    for payment processing.`,
+    image: ecommerceStore,
+    source_code_link: 'https://github.com/kpirabaharan/E-Commerce-Store',
+    website_link: 'https://e-commerce-store-kpirabaharan.vercel.app',
+  },
+  {
+    name: 'E-Commerce Admin Dashboard',
+    description: `Built a robust e-commerce admin dashboard site, leveraging Next.js, 
+    Shadcn, Tailwind CSS, AWS RDS, and S3 for seamless and efficient store management`,
+    image: ecommerceAdmin,
+    source_code_link:
+      'https://github.com/kpirabaharan/E-Commerce-Admin-Dashboard',
+    website_link: 'https://e-commerce-admin-dashboard-kpirabaharan.vercel.app/',
+  },
+  {
     name: 'Netflix Clone',
     description: `Full-stack Netflix clone built with Next.js, replicating the core 
     features of the popular movie streaming platform.`,
     image: netflixClone,
     source_code_link: 'https://github.com/kpirabaharan/Netflix-Clone',
-    website_link: 'https://netflix-clone-kpirabaharan.vercel.app/',
+    website_link: 'https://netflix-clone-kpirabaharan.vercel.app',
   },
   {
     name: 'Spotify Clone',
@@ -305,7 +325,7 @@ const projects = [
     features of the popular music streaming platform.`,
     image: spotifyClone,
     source_code_link: 'https://github.com/kpirabaharan/Spotify-Clone',
-    website_link: 'https://spotify-clone-kpirabaharan.vercel.app/',
+    website_link: 'https://spotify-clone-kpirabaharan.vercel.app',
   },
   {
     name: 'Smart Windows + Blinders',
@@ -358,6 +378,7 @@ const projects = [
     description: `Autonomous line-following robot project designed to deliver 
     objects to a specific destination by accurately following a predefined path.`,
     image: pathFollowingRobot,
+    website_link: 'https://www.youtube.com/watch?v=JBqL7PEfFzk',
   },
 ];
 

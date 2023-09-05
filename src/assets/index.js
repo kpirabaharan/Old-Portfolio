@@ -6,6 +6,7 @@ import server from './server.svg';
 import embedded from './embedded.svg';
 
 import github from './github.png';
+import youtube from './youtube.png';
 
 import menu from './menu.svg';
 import close from './close.svg';
@@ -54,6 +55,8 @@ import aws from './tech/aws.png';
 import docker from './tech/docker.png';
 import git from './tech/git.png';
 
+import ecommerceStore from './projects/e-commerce-store.png';
+import ecommerceAdmin from './projects/e-commerce-admin.png';
 import netflixClone from './projects/netflix-clone.png';
 import spotifyClone from './projects/spotify-clone.png';
 import smartWindows from './projects/smart-windows.png';
@@ -77,6 +80,7 @@ export {
   server,
   embedded,
   github,
+  youtube,
   menu,
   close,
   leftArrow,
@@ -114,6 +118,8 @@ export {
   aws,
   docker,
   git,
+  ecommerceStore,
+  ecommerceAdmin,
   netflixClone,
   spotifyClone,
   smartWindows,

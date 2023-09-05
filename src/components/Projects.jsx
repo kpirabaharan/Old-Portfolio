@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github, web } from '../assets';
+import { github, web, youtube } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils';
 
@@ -14,6 +14,7 @@ const ProjectCard = ({
   source_code_link,
   website_link,
 }) => {
+  const isYoutubeLink = website_link?.includes('youtube');
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.2, 1)}
@@ -31,7 +32,7 @@ const ProjectCard = ({
                     items-center cursor-pointer'
               >
                 <img
-                  src={web}
+                  src={isYoutubeLink ? youtube : web}
                   alt='website'
                   className='w-1/2 h-1/2 object-contain z-20'
                 />
@@ -82,7 +83,7 @@ const ProjectCard = ({
                     items-center cursor-pointer'
                 >
                   <img
-                    src={web}
+                    src={isYoutubeLink ? youtube : web}
                     alt='website'
                     className='w-1/2 h-1/2 object-contain z-20'
                   />
