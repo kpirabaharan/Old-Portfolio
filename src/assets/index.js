@@ -56,6 +56,7 @@ import git from './tech/git.png';
 
 import netflixClone from './projects/netflix-clone.png';
 import spotifyClone from './projects/spotify-clone.png';
+import smartWindows from './projects/smart-windows.png';
 import sociopedia from './projects/sociopedia.png';
 import ecommerce from './projects/ecommerce.png';
 import velocityvoyage from './projects/velocityvoyage.png';
@@ -115,6 +116,7 @@ export {
   git,
   netflixClone,
   spotifyClone,
+  smartWindows,
   sociopedia,
   ecommerce,
   velocityvoyage,
