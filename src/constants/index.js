@@ -255,7 +255,7 @@ const otherTech = [
 
 const experiences = [
   {
-    title: 'Embedded Software Developer',
+    title: 'Software Developer',
     company_name: 'Curtiss-Wright',
     location: 'Ottawa, ON',
     icon: cw,
