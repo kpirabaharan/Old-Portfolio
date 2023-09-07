@@ -300,7 +300,8 @@ const projects = [
     for payment processing.`,
     image: ecommerceStore,
     source_code_link: 'https://github.com/kpirabaharan/E-Commerce-Store',
-    website_link: 'https://e-commerce-store-kpirabaharan.vercel.app',
+    website_link: 'https://e-commerce-store-clothes-kpirabaharan.vercel.app/',
+    website_link_2: 'https://e-commerce-store-shoes-kpirabaharan.vercel.app/',
   },
   {
     name: 'E-Commerce Admin Dashboard',

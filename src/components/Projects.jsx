@@ -13,6 +13,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   website_link,
+  website_link_2,
 }) => {
   const isYoutubeLink = website_link?.includes('youtube');
   return (
@@ -21,7 +22,7 @@ const ProjectCard = ({
       className='relative flex bg-dark-teal rounded-2xl w-full sm:w-[360px] h-[350px]'
     >
       <div className='absolute inset-0 flex justify-between m-6 z-10'>
-        <div>
+        <div className='flex flex-row gap-x-2'>
           {website_link ? (
             <a>
               <div
@@ -33,6 +34,25 @@ const ProjectCard = ({
               >
                 <img
                   src={isYoutubeLink ? youtube : web}
+                  alt='website'
+                  className='w-1/2 h-1/2 object-contain z-20'
+                />
+              </div>
+            </a>
+          ) : (
+            <div></div>
+          )}
+          {website_link_2 ? (
+            <a>
+              <div
+                onClick={() => {
+                  window.open(website_link_2, '_blank');
+                }}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                    items-center cursor-pointer'
+              >
+                <img
+                  src={web}
                   alt='website'
                   className='w-1/2 h-1/2 object-contain z-20'
                 />
@@ -72,7 +92,7 @@ const ProjectCard = ({
         <p className='text-2xl text-white'>{name}</p>
         <p className='mt-7 px-8'>{description}</p>
         <div className='absolute inset-0 flex justify-between m-6 z-10'>
-          <div>
+          <div className='flex flex-row gap-x-2'>
             {website_link ? (
               <a>
                 <div
@@ -84,6 +104,25 @@ const ProjectCard = ({
                 >
                   <img
                     src={isYoutubeLink ? youtube : web}
+                    alt='website'
+                    className='w-1/2 h-1/2 object-contain z-20'
+                  />
+                </div>
+              </a>
+            ) : (
+              <div></div>
+            )}
+            {website_link_2 ? (
+              <a>
+                <div
+                  onClick={() => {
+                    window.open(website_link_2, '_blank');
+                  }}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center 
+                    items-center cursor-pointer'
+                >
+                  <img
+                    src={web}
                     alt='website'
                     className='w-1/2 h-1/2 object-contain z-20'
                   />
