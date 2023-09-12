@@ -64,7 +64,11 @@ const Navbar = ({ isHomePage = true }) => {
               className={`outline outline-offset-0 outline-2 rounded-lg text-secondary 
             hover:text-white p-2 text-lg font-medium `}
             >
-              <a href='./resume.pdf' download target='_blank'>
+              <a
+                href='./Keeshigan-Pirabaharan-Resume.pdf'
+                download
+                target='_blank'
+              >
                 Resume
               </a>
             </li>

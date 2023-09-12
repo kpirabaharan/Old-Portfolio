@@ -416,7 +416,7 @@ const contactInfo = [
     name: 'Resume',
     image: docicon,
     value: 'Resume',
-    href: './resume.pdf',
+    href: './Keeshigan-Pirabaharan-Resume.pdf',
     link: true,
   },
   {
