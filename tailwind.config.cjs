@@ -7,6 +7,9 @@ module.exports = {
       transitionDelay: {
         2000: '2000ms',
       },
+      maxWidth: {
+        '8xl': '90rem',
+      },
       animation: {
         fade: 'fadeOut 2s 2s ease-out',
       },

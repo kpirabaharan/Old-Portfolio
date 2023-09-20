@@ -11,7 +11,7 @@ const SectionWrapper = (Component, idName) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.15 }}
-        className={`${styles.padding} max-w-7xl w-5/6 mx-auto relative z-0`}
+        className={`${styles.padding} max-w-8xl w-5/6 mx-auto relative z-0`}
       >
         <div id={`${idName}`} className='absolute -top-[80px] sm:-top-[84px]' />
         <Component />

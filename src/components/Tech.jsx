@@ -23,16 +23,16 @@ const TechField = ({ index, field, technology }) => {
       >
         <p className={styles.sectionSubText}>{field}</p>
       </motion.div>
-      <div className='flex flex-row flex-wrap justify-center sm:justify-start pt-6 pb-4 sm:pb-0 gap-y-10 sm:gap-10 h-full w-full'>
+      <div className='flex flex-row flex-wrap justify-center sm:justify-start pt-6 pb-4 sm:pb-0 gap-y-10 sm:gap-8 h-full w-full'>
         {technology.map((tech) => {
           return (
             <motion.div
               variants={fadeIn('right', 'spring', 0.1 + index * 0.1, 0.5)}
-              className='w-[100px] h-[75px] sm:w-[75px] sm:h-[100px] flex flex-col justify-center 
+              className='w-[100px] h-[75px] sm:w-[100px] sm:h-[100px] flex flex-col justify-center 
                 items-center'
               key={`${field}${tech.name}`}
             >
-              <div className='w-[80%] h-[75%] sm:w-[90%] sm:h-[80%] flex justify-center'>
+              <div className='w-[80%] h-[75%] sm:w-[75%] sm:h-[75%] flex justify-center'>
                 <img
                   className='w-full h-full object-contain'
                   src={tech.icon}
