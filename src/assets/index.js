@@ -18,10 +18,18 @@ import cw from './company/cw.png';
 
 import western from './western.png';
 
-import html from './tech/html.png';
-import css from './tech/css.png';
 import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
+import python from './tech/python.png';
+import c from './tech/c.png';
+import cpp from './tech/cplusplus.png';
+import csharp from './tech/csharp.png';
+import dart from './tech/dart.png';
+import java from './tech/java.png';
+import kotlin from './tech/kotlin.png';
+
+import html from './tech/html.png';
+import css from './tech/css.png';
 import reactjs from './tech/reactjs.png';
 import nextjs from './tech/nextjs.png';
 import redux from './tech/redux.png';
@@ -29,23 +37,20 @@ import tailwind from './tech/tailwind.png';
 
 import nodejs from './tech/nodejs.png';
 import expressjs from './tech/expressjs.png';
+import django from './tech/django.png';
+import firebase from './tech/firebase.png';
+import supabase from './tech/supabase.png';
+
 import mongodb from './tech/mongodb.png';
 import mySQL from './tech/MySQL.png';
 import postgreSQL from './tech/postgreSQL.png';
-import supabase from './tech/supabase.png';
+import prisma from './tech/prisma.png';
 
-import dart from './tech/dart.png';
 import flutter from './tech/flutter.png';
-import kotlin from './tech/kotlin.png';
+import android from './tech/android.png';
 
-import python from './tech/python.png';
-import tensorflow from './tech/tensorflow.png';
-
-import c from './tech/C.png';
-import cpp from './tech/cplusplus.png';
 import linux from './tech/linux.png';
 import network from './tech/network.png';
-
 import solidworks from './tech/solidworks.png';
 import arduino from './tech/Arduino.png';
 import raspberryPi from './tech/raspberry-pi.png';
@@ -54,6 +59,7 @@ import additivemanufacturing from './tech/additive_manufacturing.png';
 import aws from './tech/aws.png';
 import docker from './tech/docker.png';
 import git from './tech/git.png';
+import debug from './tech/debug.png';
 
 import ecommerceStore from './projects/e-commerce-store.png';
 import ecommerceAdmin from './projects/e-commerce-admin.png';
@@ -98,17 +104,22 @@ export {
   tailwind,
   nodejs,
   expressjs,
+  django,
+  firebase,
+  supabase,
   mongodb,
   mySQL,
   postgreSQL,
-  supabase,
+  prisma,
   dart,
   flutter,
   kotlin,
+  java,
+  android,
   python,
-  tensorflow,
   c,
   cpp,
+  csharp,
   linux,
   network,
   solidworks,
@@ -118,6 +129,7 @@ export {
   aws,
   docker,
   git,
+  debug,
   ecommerceStore,
   ecommerceAdmin,
   netflixClone,

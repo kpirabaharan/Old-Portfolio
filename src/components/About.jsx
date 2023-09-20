@@ -21,7 +21,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-8 text-secondary-2 text-[17px] max-w-4xl leading-[30px]'
       >
-        I am actively seeking opportunities in full-stack development.
+        I am actively seeking opportunities in software development.
       </motion.p>
     </>
   );

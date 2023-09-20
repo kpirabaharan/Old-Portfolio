@@ -1,5 +1,4 @@
 import {
-  web,
   javascript,
   typescript,
   html,
@@ -9,18 +8,18 @@ import {
   redux,
   tailwind,
   phone,
-  server,
-  embedded,
   nodejs,
   mongodb,
   python,
   mySQL,
+  prisma,
   dart,
   flutter,
+  java,
   kotlin,
-  tensorflow,
   c,
   cpp,
+  csharp,
   linux,
   network,
   solidworks,
@@ -52,32 +51,21 @@ import {
   smartWindows,
   ecommerceStore,
   ecommerceAdmin,
+  debug,
+  android,
+  django,
+  firebase,
 } from '../assets';
 
 export const navLinks = [
-  {
-    id: 'about',
-    title: 'About',
-  },
-  {
-    id: 'work',
-    title: 'Work',
-  },
-  {
-    id: 'projects',
-    title: 'Projects',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
-  },
+  { id: 'about', title: 'About' },
+  { id: 'work', title: 'Work' },
+  { id: 'projects', title: 'Projects' },
+  { id: 'contact', title: 'Contact' },
 ];
 
-const about = `I'm Keeshigan Pirabaharan, a 24-year-old Mechatronics/Software 
-engineer with experience in creating innovative solutions that seamlessly integrate 
-both Frontend and Backend technologies.  I'm a quick learner with the willingness to 
-learn new technologies to create efficient and scalable solutions that solve real-world 
-problems.`;
+const about =
+  "I'm Keeshigan Pirabaharan, a 24-year-old Mechatronics/Software engineer with a track record of crafting innovative solutions that seamlessly blend Frontend and Backend technologies. I possess a strong aptitude for rapid learning and a genuine enthusiasm for adopting new technologies to engineer efficient and scalable solutions that address real-world challenges.";
 
 const opportunity = `I am actively seeking opportunities in full-stack development starting from June 26th, 2023.`;
 
@@ -92,165 +80,61 @@ const typedHero = [
   5000,
 ];
 
-const services = [
-  {
-    title: 'Frontend Developer',
-    icon: web,
-  },
-  {
-    title: 'Backend Developer',
-    icon: server,
-  },
-  {
-    title: 'Mobile Developer',
-    icon: phone,
-  },
-  {
-    title: 'Embedded Systems Developer',
-    icon: embedded,
-  },
+const languages = [
+  { name: 'JavaScript', icon: javascript },
+  { name: 'TypeScript', icon: typescript },
+  { name: 'Python', icon: python },
+  { name: 'C', icon: c },
+  { name: 'C++', icon: cpp },
+  { name: 'C#', icon: csharp },
+  { name: 'Dart', icon: dart },
+  { name: 'Java', icon: java },
+  { name: 'Kotlin', icon: kotlin },
 ];
 
 const frontEndDev = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React.js',
-    icon: reactjs,
-  },
-  {
-    name: 'Next.js',
-    icon: nextjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
+  { name: 'HTML', icon: html },
+  { name: 'CSS 3', icon: css },
+  { name: 'Tailwind CSS', icon: tailwind },
+  { name: 'React.js', icon: reactjs },
+  { name: 'Next.js', icon: nextjs },
+  { name: 'Redux Toolkit', icon: redux },
 ];
 
 const backEndDev = [
-  {
-    name: 'Node.js',
-    icon: nodejs,
-  },
-  {
-    name: 'Express.js',
-    icon: expressjs,
-  },
+  { name: 'Node.js', icon: nodejs },
+  { name: 'Express.js', icon: expressjs },
+  { name: 'Django', icon: django },
+  { name: 'Firebase', icon: firebase },
+  { name: 'Supabase', icon: supabase },
+];
 
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'MySQL',
-    icon: mySQL,
-  },
-  {
-    name: 'PostgreSQL',
-    icon: postgreSQL,
-  },
-  {
-    name: 'Supabase',
-    icon: supabase,
-  },
+const databases = [
+  { name: 'MongoDB', icon: mongodb },
+  { name: 'MySQL', icon: mySQL },
+  { name: 'PostgreSQL', icon: postgreSQL },
+  { name: 'Prisma', icon: prisma },
 ];
 
 const mobileDev = [
-  {
-    name: 'Dart',
-    icon: dart,
-  },
-  {
-    name: 'Flutter',
-    icon: flutter,
-  },
-  {
-    name: 'Kotlin',
-    icon: kotlin,
-  },
+  { name: 'Flutter', icon: flutter },
+  { name: 'Android', icon: android },
 ];
 
-const embeddedDev = [
-  {
-    name: 'C',
-    icon: c,
-  },
-  {
-    name: 'C++',
-    icon: cpp,
-  },
-  {
-    name: 'Linux',
-    icon: linux,
-  },
-  {
-    name: 'Network Protocols',
-    icon: network,
-  },
-];
-
-const mechatronicsDev = [
-  {
-    name: 'SolidWorks',
-    icon: solidworks,
-  },
-  {
-    name: 'Arduino',
-    icon: arduino,
-  },
-  {
-    name: 'Raspberry Pi',
-    icon: raspberryPi,
-  },
-  {
-    name: '3D Printing',
-    icon: additivemanufacturing,
-  },
-];
-
-const dataScience = [
-  {
-    name: 'Python',
-    icon: python,
-  },
-  {
-    name: 'Tensorflow',
-    icon: tensorflow,
-  },
+const mechatronicsEmbeddedDev = [
+  { name: 'Linux', icon: linux },
+  { name: 'Raspberry Pi', icon: raspberryPi },
+  { name: 'Arduino', icon: arduino },
+  { name: 'SolidWorks', icon: solidworks },
+  { name: 'Network Protocols', icon: network },
+  { name: '3D Printing', icon: additivemanufacturing },
 ];
 
 const otherTech = [
-  {
-    name: 'AWS',
-    icon: aws,
-  },
-  {
-    name: 'Docker',
-    icon: docker,
-  },
-  {
-    name: 'Git',
-    icon: git,
-  },
+  { name: 'AWS', icon: aws },
+  { name: 'Docker', icon: docker },
+  { name: 'Git', icon: git },
+  { name: 'Debug Tools', icon: debug },
 ];
 
 const experiences = [
@@ -431,13 +315,12 @@ export {
   about,
   opportunity,
   typedHero,
-  services,
+  languages,
   frontEndDev,
   backEndDev,
+  databases,
   mobileDev,
-  embeddedDev,
-  mechatronicsDev,
-  dataScience,
+  mechatronicsEmbeddedDev,
   otherTech,
   experiences,
   education,
